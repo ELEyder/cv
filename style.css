@@ -2,3 +2,6 @@ body {
     display: grid;
     place-content: center;
   }
+.foto {
+  border-radius: 50%;
+}
