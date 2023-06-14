@@ -1,7 +1,15 @@
-body {
-    display: grid;
-    place-content: center;
-  }
+header {
+  background-color: aqua;
+  color: black;
+}
+
+.container-foto{
+  background-color: brown;
+}
 .foto {
   border-radius: 50%;
+}
+.perfil {
+  width: 100% !important;
+  height: 420px;
 }
