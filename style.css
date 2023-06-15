@@ -1,15 +1,19 @@
 header {
-  background-color: aqua;
   color: black;
 }
 
 .container-foto{
-  background-color: brown;
+  display: grid;
+  place-content: center;
 }
 .foto {
   border-radius: 50%;
 }
 iframe {
-  width: 100% !important;
-  height: 250px;
+  width: 500px !important;
+  height: 300px;
+}
+.contenido {
+  display: grid;
+  place-content: center;
 }
