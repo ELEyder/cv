@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <title>CV - Eyder Huayta Tantavilca</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="control.js"></script>
 </head>
 
 <body>
@@ -14,52 +15,40 @@
     </header>
     <nav>
       <ul>
-        <li><a href="perfil.html">Mi Perfil</a></li>
-        <li><a href="resumen.html">Resumen Laboral</a></li>
-        <li><a href="historial.html">Historial Laboral</a></li>
-        <li><a href="index.html">Formación</a></li>
-        <li><a href="index.html">Idiomas</a></li>
-        <li><a href="index.html">Aptitudes</a></li>
-        <li><a href="index.html">Habilidades Informáticas</a></li>
+        <li><button id="pefil" onclick="mostrarPerfil();">Mi Perfil</button></li>
+        <li><button  id="resumen.html">Resumen Laboral</button></li>
+        <li><button id="historial.html">Historial Laboral</button></li>
+        <li><button id="formacion.html">Formación</button></li>
+        <li><button id="idiomas.html">Idiomas</button></li>
+        <li><button id="aptitudes.html">Aptitudes</button></li>
+        <li><button id="habilidades.html">Habilidades Informáticas</button></li>
       </ul>
     </nav>
-
-    <P>RESUMEN LABORAL</P>
-    <p>Programador junior con trayectoria académica desarrolladas en el instituto SENATI. <br>
-    A lo largo de mis estudios, he realizado distintos proyectos donde puse a prueba <br>
-    mis conocimientos y habilidades. Busco formar parte de una empresa la cual demuestre <br>
-    mis habilidades y las ponga en práctica. Seria un placer aportar mis conocimientos.</p>
-
-    <p>HISTORIAL LABORAL</p>
-    <P>Nula</P>
-
-    <p>FORMACIÓN</p>
-    <ul>
-      <li>
-        En curso: <br>
-        Desarrollo de Software - SENATI</li>
-    </ul>
-    <p>IDIOMAS</p>
-    <ul>
-      <li>Inglés Básico</li>
-    </ul>
-    
-    <p>APTITUDES</p>
-    <ul>
-      <li>Trabajo en Equipo</li>
-      <li>Resolución de Problemas</li>
-      <li>Aprendizaje Efectivo</li>
-    </ul>
-
-    <p>Habilidades Informáticas</p>
-
-    <ul>
-      <li>Programación Básica con Java y Python</li>
-      <li>Manejo de MySQL</li>
-      <li>Maquetacion Básica CSS</li>
-    </ul>
   </div>
-  <iframe class="perfil" src="perfil.html" frameborder="0"></iframe>
+
+  <div class="contenido">
+    <div id="perfil">
+      <iframe src="perfil.html" frameborder="0"></iframe>
+    </div>
+    <div id="resumen">
+      <iframe src="resumen.html" frameborder="0"></iframe>
+    </div>
+    <div id="historial">
+      <iframe src="historial.html" frameborder="0"></iframe>
+    </div>
+    <div id="formacion">
+      <iframe src="formacion.html" frameborder="0"></iframe>
+    </div>
+    <div id="idiomas">
+      <iframe src="idiomas.html" frameborder="0"></iframe>
+    </div>
+    <div id="aptitudes">
+      <iframe src="aptitudes.html" frameborder="0"></iframe>
+    </div>
+    <div id="habilidades">
+      <iframe src="habilidades.html" frameborder="0"></iframe>
+      </div>
+    </div>
 </body>
 
 </html>

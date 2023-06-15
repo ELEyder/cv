@@ -9,7 +9,7 @@ header {
 .foto {
   border-radius: 50%;
 }
-.perfil {
+iframe {
   width: 100% !important;
-  height: 420px;
+  height: 250px;
 }
