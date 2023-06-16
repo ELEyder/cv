@@ -6,8 +6,9 @@ body{
 header {
   background-color: rgb(142, 155, 255);
   border-radius: 20px;
-  width: 100%;
+  width: 90%;
   height: 40px;
+
 }
 nav{
   margin: 5px;
@@ -20,6 +21,16 @@ button {
   width: 14%;
   height: 30px;
   font-size: medium;
+}
+a.descarga{
+  position:absolute;
+  right: 1%;
+  width: 118px;
+  height: 28px;
+}
+button.descarga{
+  width: 120px;
+  height: 30px;
 }
 .container-foto{
   display: grid;
