@@ -8,10 +8,10 @@
   <script src="control.js"></script>
 </head>
 
-<body>
+<body class="index">
   <div class="container">
     <header>
-      <h1>&#160 Mi CV <a class="descarga" href="cv.pdf" class="descarga" download="CV" title="Descargar CV"> <button class="descarga">Descargar CV</button></a> </h1>
+      <text>&#160 Mi CV </text><a class="descarga" href="cv.pdf" class="descarga" download="CV" title="Descargar CV">Descargar CV</a>
     </header>
     <nav>
         <button id="pefil" onclick="mostrarPerfil();">Mi Perfil</button>
@@ -25,7 +25,9 @@
   </div>
 
   <div class="contenido">
+    <div id="perfil">
       <iframe class="iperfil" src="perfil.html" frameborder="0"></iframe>
+    </div>
     <div id="resumen">
       <iframe class="iresumen" src="resumen.html" frameborder="0"></iframe>
     </div>
@@ -45,6 +47,7 @@
       <iframe class="ihabilidades" src="habilidades.html" frameborder="0"></iframe>
       </div>
     </div>
+    
 </body>
 
 </html>

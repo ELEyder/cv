@@ -1,37 +1,44 @@
-body{
+/*Index*/
+body.index{
   background-color: rgb(168, 178, 219);
   margin: 5px;
+  padding: 0;
+  height: 100%;
 }
-
 header {
   background-color: rgb(142, 155, 255);
   border-radius: 20px;
-  width: 90%;
+  width: 88%;
   height: 40px;
-
+  font-size: x-large;
+  font-weight: bold;
 }
+/*Botón de Descarga*/
+a.descarga{
+  position:absolute;
+  right: 1%;
+  width: 150px;
+  height: 40px;
+  font-size: medium;
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+}
+/*Index*/
 nav{
   margin: 5px;
 }
 button {
-  font-size: small;
   background-color: rgb(142, 155, 255);
   color: rgb(22, 27, 65);
   border-color: rgb(106, 123, 250);
   width: 14%;
-  height: 30px;
+  height: 50px;
+  border: none;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   font-size: medium;
 }
-a.descarga{
-  position:absolute;
-  right: 1%;
-  width: 118px;
-  height: 28px;
-}
-button.descarga{
-  width: 120px;
-  height: 30px;
-}
+/*Perfil*/
 .container-foto{
   display: grid;
   place-content: center;
@@ -39,70 +46,66 @@ button.descarga{
 .foto {
   border-radius: 50%;
 }
+/*Fondos de iframes*/
+body.contenido{
+  background-color: rgb(142, 155, 255);
+}
+.contenido{
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+  margin: 5px;
+  padding: 0px;
+}
 iframe.iperfil {
-  width: 500px !important;
-  height: 270px;
+  width: 100%;
+  height: 290px;
+  padding: 10px;
+  display: block;
+  border: none;
 }
 iframe.iresumen {
   width: 500px !important;
-  height: 250px;
+  height: 220px;
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+  padding: 10px;
 }
 iframe.ihistorial {
   width: 500px !important;
-  height: 115px;
+  height: 155px;
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+  padding: 10px;
 }
 iframe.iformacion {
   width: 500px !important;
   height: 136px;
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+  padding: 10px;
 }
 iframe.iidiomas {
   width: 500px !important;
   height: 120px;
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+  padding: 10px;
 }
 iframe.iaptitudes {
   width: 500px !important;
   height: 155px;
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+  padding: 10px;
 }
 iframe.ihabilidades {
   width: 500px !important;
   height: 170px;
+  background-color: rgb(142, 155, 255);
+  border-radius: 20px;
+  padding: 10px;
 }
 .contenido {
   display: grid;
   place-content: center;
-}
-.perfil{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
-}
-.resumen{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
-}
-.idiomas{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
-}
-.formacion{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
-}
-.historial{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
-}
-.aptitudes{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
-}
-.habilidades{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
 }
