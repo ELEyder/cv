@@ -1,111 +1,128 @@
-/*Index*/
-body.index{
-  background-color: rgb(168, 178, 219);
-  margin: 5px;
-  padding: 0;
-  height: 100%;
+/* Fondo que posiblemente no se ve si la pagina tiene contenido */
+body{
+    background-color: rgb(233, 220, 245);
 }
-header {
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  width: 88%;
-  height: 40px;
-  font-size: x-large;
-  font-weight: bold;
+/* Barra de Navegacion */
+/* Color de la parte superior de la pagina donde está los botones y el icono */
+.container-fluid{
+    padding: 0px;
+    background-color: rgb(194, 194, 194);
 }
-/*Botón de Descarga*/
-a.descarga{
-  position:absolute;
-  right: 1%;
-  width: 150px;
-  height: 40px;
-  font-size: medium;
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
+.texto-de-link {
+    color: rgb(68, 68, 68);
 }
-/*Index*/
-nav{
-  margin: 5px;
+/* Margen entre los elementos de container-fluid y los costados */
+.navbar {
+    padding: 2rem;
 }
-button {
-  background-color: rgb(142, 155, 255);
-  color: rgb(22, 27, 65);
-  border-color: rgb(106, 123, 250);
-  width: 14%;
-  height: 50px;
-  border: none;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  font-size: medium;
+
+/* Icono de Inicio */
+img.icon{
+    height: 30px;
+    width: 30px;
 }
-/*Perfil*/
-.container-foto{
-  display: grid;
-  place-content: center;
+/* Ocultar el icono cuando el taamaño de ancho sea menor a 767px */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
 }
-.foto {
-  border-radius: 50%;
+/* Parte de mi foto*/
+/* Parte de las secciones generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/*Fondos de iframes*/
-body.contenido{
-  background-color: rgb(142, 155, 255);
+/* Mi foto */
+img.foto{
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
 }
-.contenido{
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  margin: 5px;
-  padding: 0px;
+/* Fondo de todo */
+.hero {
+    min-height: 450px;
+    text-align: center;
+    background-color: rgb(194, 194, 194);
 }
-iframe.iperfil {
-  width: 100%;
-  height: 290px;
-  padding: 10px;
-  display: block;
-  border: none;
+/* Separacion del contenido */
+.hero-principal {
+    padding: 3rem;
 }
-iframe.iresumen {
-  width: 500px !important;
-  height: 220px;
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
+/* fuente de el nombre completo */
+.hero-principal h1{
+    font-family: 'Archivo Black', cursive;
+    font-size: 2.5rem;
 }
-iframe.ihistorial {
-  width: 500px !important;
-  height: 155px;
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
+/* fuente de descripcion corta */
+.hero-principal h2{
+    color: rgb(53, 53, 53);
+    font-size: 1.5rem;
 }
-iframe.iformacion {
-  width: 500px !important;
-  height: 136px;
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
+/* Conoce a Eyder Fondo y letras  */
+/* Colores de texto y fondo */
+.seccion-oscura{
+    color: white;
+    background-color: black;
 }
-iframe.iidiomas {
-  width: 500px !important;
-  height: 120px;
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
 }
-iframe.iaptitudes {
-  width: 500px !important;
-  height: 155px;
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
 }
-iframe.ihabilidades {
-  width: 500px !important;
-  height: 170px;
-  background-color: rgb(142, 155, 255);
-  border-radius: 20px;
-  padding: 10px;
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Archivo Black', cursive;
 }
-.contenido {
-  display: grid;
-  place-content: center;
+.seccion-text {
+    text-align: 1.2rem;
+
+}
+.formacion {
+    height: 500px;
+    padding: 10px;
+}
+.formacion .contenedor{
+    text-align: center;
+    color: rgb(26, 26, 26);
+    max-width: 600px;
+}
+.senati {
+    max-width: 150px;
+    margin: 20px;
+    border-radius: 50%
+}
+.formacion .seccion-text{
+    font-size: 1.2rem;
+}
+.seccion-clara {
+    background-color: rgb(202, 201, 201);
+}
+.proyectos {
+    height: 600px;
+}
+.fila-repo {
+    background-color: black;
+}
+.col-repo {
+    background-color: black;
+    text-align: center;
+    border-color: aliceblue;
+}
+.proyectos .seccion-titulo{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.img-repo {
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
 }

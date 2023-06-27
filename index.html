@@ -1,53 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <title>CV - Eyder Huayta Tantavilca</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="control.js"></script>
+  <!--Especificaciones de la página web-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Eyder Huayta">
+  <meta name="description" content="Desarrollo de Portafolio de Eyder Huayta">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Boostrap">
+  <!--TITULO-->
+  <title>Eyder Huayta | Desarrollador de Software</title>
+  <link rel="icon" href="img/desarrollo.png">
+  <!--Boostrap 5.3-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 
-<body class="index">
-  <div class="container">
-    <header>
-      <text>&#160 Mi CV </text><a class="descarga" href="cv.pdf" class="descarga" download="CV" title="Descargar CV">Descargar CV</a>
-    </header>
-    <nav>
-        <button id="pefil" onclick="mostrarPerfil();">Mi Perfil</button>
-        <button id="resumen.html" onclick="mostrarResumen();">Resumen Laboral</button>
-        <button id="historial.html" onclick="mostrarHistorial();">Historial Laboral</button>
-        <button id="formacion.html" onclick="mostrarFormacion();">Formación</button>
-        <button id="idiomas.html" onclick="mostrarIdiomas();">Idiomas</button>
-        <button id="aptitudes.html" onclick="mostrarAptitudes();">Aptitudes</button>
-        <button id="habilidades.html" onclick="mostrarHabilidades();">Habilidades Informáticas</button>
-    </nav>
-  </div>
-
-  <div class="contenido">
-    <div id="perfil">
-      <iframe class="iperfil" src="perfil.html" frameborder="0"></iframe>
-    </div>
-    <div id="resumen">
-      <iframe class="iresumen" src="resumen.html" frameborder="0"></iframe>
-    </div>
-    <div id="historial">
-      <iframe class="ihistorial" src="historial.html" frameborder="0"></iframe>
-    </div>
-    <div id="formacion">
-      <iframe class="iformacion" src="formacion.html" frameborder="0"></iframe>
-    </div>
-    <div id="idiomas">
-      <iframe class="iidiomas" src="idiomas.html" frameborder="0"></iframe>
-    </div>
-    <div id="aptitudes">
-      <iframe class="iaptitudes" src="aptitudes.html" frameborder="0"></iframe>
-    </div>
-    <div id="habilidades">
-      <iframe class="ihabilidades" src="habilidades.html" frameborder="0"></iframe>
+<body>
+  <div class="container-fluid">
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img class="icon" src="img/desarrollo.png" alt="Logo de la pagina">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link texto-de-link" aria-current="page" href="#">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-de-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-de-link" href="#">Contactos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-de-link" download="cv" href="pdf/cv.pdf">Descargar CV</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    
+    </nav>
+    <!-- Contenido Principal -->
+    <section class="hero align-items-stretch ">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="foto rounded-circle" src="img/image3.png" alt="Eyder Huayta">
+        <h1>EYDER VICTOR HUAYTA TANTAVILCA</h1>
+        <h2>Desarrollador de Software Junior :)</h2>
+
+      </div>
+    </section>
+    <!-- Sobre mi -->
+    <section class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Eyder Huayta</h2>
+        <p class="seccion-texto">Soy un programador junior con trayectoria académica desarrolladas en el 
+          instituto SENATI. A lo largo de mis estudios, he realizado distintos proyectos donde puse a prueba 
+          mis conocimientos y habilidades. Busco formar parte de una empresa la cual demuestre
+          mis habilidades y las ponga en práctica. Seria un placer aportar mis conocimientos.</p>
+      </div>
+    </section>
+    <section class="formacion seccion-clara">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Formación Académica</h2>
+        <div class="row">
+          <div class="col">
+            <img class="senati" src="img/senati.jpg" alt="senati">
+            <h2 class="seccion-text">Desarrollo de Software en
+              Instituto SENATI - 4to semestre.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proyectos seccion-oscura">
+      <div class="contenedor container-fluid">
+        <div class="row fila-repo">
+          <h2 class="seccion-titulo">Proyectos</h2>
+        </div>
+        <div class="row fila-repo ">
+          <div class="col-6 col-repo">
+            <h2>Mi página Web</h2>
+            <img class="img-repo" src="img/pagina-web.png" alt="">
+            <div class="nav-item">
+              <a class="nav-link texto-de-link" href="https://github.com/ELEyder/CV.git">Git Hub</a>
+            </div>
+            <div class="nav-item">
+              <a class="nav-link texto-de-link" href="eleyder.github.io/CV/">Link</a>
+            </div>
+          </div>
+          <div class="col-6 col-repo">
+            <h2>Sistema de Facturas</h2>
+            <img class="img-repo" src="img/tkinter-python.png" alt="">
+            <div class="nav-item">
+              <a class="nav-link texto-de-link" href="https://github.com/ELEyder/CV.git">Git Hub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
