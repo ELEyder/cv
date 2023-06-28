@@ -26,6 +26,16 @@ img.icon{
     .navbar-brand{
         display: none;
     }
+    .img-repo{
+        max-width: 400px;
+    }
+    h5 {
+        display: none;
+    }
+    .img-contacto {
+        margin: 10px;
+        max-width: 30px;
+    }
 }
 /* Parte de mi foto*/
 /* Parte de las secciones generales */
@@ -103,7 +113,7 @@ img.foto{
     font-size: 1.2rem;
 }
 .seccion-clara {
-    background-color: rgb(202, 201, 201);
+    background-color: rgb(255, 255, 255);
 }
 .proyectos {
     padding: 40px 0px 50px 0px;
@@ -123,11 +133,10 @@ img.foto{
 }
 .img-repo {
     border-radius: 20px;
-    max-width: 400px;
-    max-height: 300px;
+    width: 100%;
 }
 .contactos {
-    height: 200px;
+    padding: 20px;
 }
 .texto-de-link2 {
     color: rgb(197, 197, 197);
@@ -137,4 +146,30 @@ img.foto{
 }
 .repositorios {
     padding: 25px;
+}
+.img-contacto {
+    width: 50px;
+}
+.iconos-contactos {
+    margin: 10px;
+    text-align: center;
+}
+h5 {
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+}
+.link-sobre-mi{
+    color: blueviolet;
+}
+.link-formacion{
+    color: blue;
+}
+.link-proyectos{
+    color: rgb(177, 0, 0);
+}
+.link-contactos{
+    color: rgb(2, 104, 45);
+}
+.link-descarga {
+    color: rgb(0, 0, 0);
 }

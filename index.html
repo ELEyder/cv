@@ -39,16 +39,19 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link texto-de-link" aria-current="page" href="#">Sobre Mi</a>
+              <a class="nav-link link-sobre-mi texto-de-link" aria-current="page" href="#sobre-mi">Sobre Mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-de-link" href="#">Proyectos</a>
+              <a class="nav-link link-formacion texto-de-link" href="#formacion">Formación Académica</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-de-link" href="#">Contactos</a>
+              <a class="nav-link link-proyectos texto-de-link" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link texto-de-link" download="cv" href="pdf/cv.pdf">Descargar CV</a>
+              <a class="nav-link link-contactos texto-de-link" href="#contactos">Contáctame</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-descarga texto-de-link" download="cv" href="pdf/cv.pdf">Descargar CV</a>
             </li>
           </ul>
         </div>
@@ -63,7 +66,7 @@
       </div>
     </section>
     <!-- Sobre mi -->
-    <section class="sobre-mi seccion-oscura">
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Eyder Huayta</h2>
         <p class="seccion-texto">Soy un programador junior con trayectoria académica desarrolladas en el 
@@ -73,7 +76,7 @@
       </div>
     </section>
     <!-- Formación Académica -->
-    <section class="formacion seccion-clara">
+    <section id="formacion" class="formacion seccion-clara">
       <div class="contenedor">
         <h2 class="seccion-titulo">Formación Académica</h2>
         <!-- Fila -->
@@ -87,7 +90,7 @@
       </div>
     </section>
     <!-- Proyectos -->
-    <section class="proyectos seccion-oscura">
+    <section id="proyectos" class="proyectos seccion-oscura">
       <div class="container text-center">
         <!-- Fila -->
         <div class="row">
@@ -118,7 +121,7 @@
           <!-- Columna de el Banco con Sistema de Cuentas -->
           <div class="col-12 col-lg-6 repositorios">
             <h2 class="titulo-repo">Banco con Sistema de Cuentas</h2>
-            <img class="img-repo img-fluid" src="img/banco.png" alt="">
+            <img class="img-repo" src="img/banco.png" alt="">
             <div class="nav-item">
               <a class="nav-link texto-de-link2" href="https://github.com/ELEyder/Banco_En_Ventana.git" target="_blank">Git Hub</a>
             </div>
@@ -127,10 +130,33 @@
       </div>
     </section>
     <!-- Seccion de Contacto -->
-    <section class="contactos seccion-clara">
-      <a class="navbar-brand" href="https://wa.me/+51919593169/?text=">
-        <img class="icon " src="img/whatsapp.svg" alt="Logo de la pagina">
-      </a>
+    <section id="contactos" class="contactos seccion-clara">
+      <div class="container iconos-contactos">
+        <!-- Fila 1 -->
+        <div class="row">
+          <!-- Columna Whatsapp -->
+          <div class="col-12 col-md-4">
+          <a href="https://wa.me/+51919593169/?text=" target="_blank">
+            <img class="img-contacto" src="img/whatsapp.svg" alt="Logo de la pagina">
+          </a>
+          <h5>+51 919593169</h5>
+          </div>
+          <!-- Columna GMAIL -->
+          <div class="col-12 col-md-4">
+          <a href="mailto:eyderhuayta26@gmail.com" target="_blank">
+            <img class="img-contacto" src="img/envelope-at.svg" alt="Logo de la pagina">
+          </a>
+          <h5>eyderhuayta26@gmail.com</h5>
+          </div>
+          <!-- Columna LINKEDIN -->
+          <div class="col-12 col-md-4">
+            <a href="https://www.linkedin.com/in/eyder-huayta/" target="_blank">
+              <img class="img-contacto" src="img/linkedin.svg" alt="Logo de la pagina">
+            </a>
+            <h5>eyder-huayta</h5>
+            </div>
+        </div>
+      </div>
     </section>
   </div>
 </body>
