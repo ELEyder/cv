@@ -106,7 +106,7 @@ img.foto{
     background-color: rgb(202, 201, 201);
 }
 .proyectos {
-    padding: 20px;
+    padding: 40px 0px 50px 0px;
 }
 .fila-repo {
     background-color: black;
@@ -134,4 +134,7 @@ img.foto{
 }
 .titulo-repo {
     font-weight: bold;
+}
+.repositorios {
+    padding: 25px;
 }
