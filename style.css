@@ -106,7 +106,7 @@ img.foto{
     background-color: rgb(202, 201, 201);
 }
 .proyectos {
-    height: 600px;
+    padding: 20px;
 }
 .fila-repo {
     background-color: black;
@@ -123,6 +123,15 @@ img.foto{
 }
 .img-repo {
     border-radius: 20px;
-    width: 400px;
-    height: 300px;
+    max-width: 400px;
+    max-height: 300px;
+}
+.contactos {
+    height: 200px;
+}
+.texto-de-link2 {
+    color: rgb(197, 197, 197);
+}
+.titulo-repo {
+    font-weight: bold;
 }
