@@ -1,0 +1,200 @@
+/* Fondo que posiblemente no se ve si la pagina tiene contenido */
+body{
+    background-color: rgb(233, 220, 245);
+}
+/* Barra de Navegacion */
+/* Color de la parte superior de la pagina donde está los botones y el icono */
+.container-fluid{
+    padding: 0px;
+    background-color: rgb(194, 194, 194);
+}
+.texto-de-link {
+    color: rgb(68, 68, 68);
+}
+/* Margen entre los elementos de container-fluid y los costados */
+.navbar {
+    padding: 2rem;
+}
+
+/* Icono de Inicio */
+img.icon{
+    height: 30px;
+    width: 30px;
+}
+/* Colores de las barras de arriba  */
+.link-sobre-mi{
+    color: blueviolet;
+}
+.link-formacion{
+    color: blue;
+}
+.link-proyectos{
+    color: rgb(177, 0, 0);
+}
+.link-contactos{
+    color: rgb(2, 104, 45);
+}
+.link-descarga {
+    color: rgb(0, 0, 0);
+}
+/* Ocultar el icono, los textos de arriba y los textos de los contactos
+ cuando el taamaño de ancho sea menor a 767px */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 284px) {
+    h5 {
+        display: none;
+    }
+    .img-contacto {
+        margin: 10px;
+        max-width: 30px;
+    }
+}
+/* Parte de mi foto*/
+/* Parte de las secciones generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Fondo de todo */
+.hero {
+    min-height: 450px;
+    text-align: center;
+    background-color: rgb(194, 194, 194);
+}
+/* Mi foto */
+img.foto{
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+}
+/* Separacion del contenido */
+.hero-principal {
+    padding: 3rem;
+}
+/* fuente de el nombre completo */
+.hero-principal h1{
+    font-family: 'Archivo Black', cursive;
+    font-size: 2.5rem;
+}
+/* fuente y color de descripcion corta */
+.hero-principal h2{
+    color: rgb(53, 53, 53);
+    font-size: 1.5rem;
+}
+/* Conoce a Eyder Fondo y letras  */
+/* Colores de texto y fondo de cada seccion */
+.seccion-oscura{
+    color: white;
+    background-color: black;
+}
+.seccion-clara {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+/* Tamaño de la seccion */
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+/* EL titulo de esta Seccion */
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Archivo Black', cursive;
+}
+/* Tamaño que abarca el texto */
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+/* FORMACION */
+/* Titulo de mi formacion academica */
+.formacion .seccion-titulo{
+
+    color: rgb(0, 0, 0);
+}
+/* Tamaño de la seccion y alineacion*/
+.formacion {
+    height: 500px;
+    padding: 10px;
+}
+/* Color del Contenedor de texto e imagen*/
+.formacion .contenedor{
+    text-align: center;
+    color: rgb(26, 26, 26);
+    max-width: 600px;
+}
+/* Imagen de Senati */
+.img-senati {
+    max-width: 150px;
+    margin: 20px;
+    border-radius: 50%
+}
+
+/* Texto de mi formacion academica */
+.formacion .seccion-text{
+    font-size: 1.2rem;
+}
+/* Seccion de PROYECTOS */
+/* margen de los objetos dentro de la seccion proyecto */
+.proyectos {
+    padding: 40px 0px 50px 0px;
+}
+/* titulo */
+.proyectos .seccion-titulo{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+/* Color del contenedor de los repositorios */
+.fila-repo {
+    background-color: black;
+}
+/* Titulo de los repositorios */
+.titulo-repo {
+    font-weight: bold;
+}
+/* Imagenes de los repositorios */
+.img-repo {
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+}
+/* Link para el github */
+.texto-de-link2 {
+    color: rgb(197, 197, 197);
+}
+/* Seccion Contactos */
+/* Separacion de los objetos de contactos */
+.contactos {
+    padding: 20px;
+}
+.contactos .seccion-titulo{
+    color: rgb(2, 59, 2);
+}
+/* Separar cada repositorio */
+.repositorios {
+    padding: 25px;
+}
+/* separacion de cada icono */
+.iconos-contactos {
+    margin: 10px;
+    text-align: center;
+}
+/* Tamaño de cada icono */
+.img-contacto {
+    width: 25px;
+}
+/* Texto de los contactos */
+h5 {
+    margin: 10px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}

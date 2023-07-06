@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<!-- CABECERA -->
 <head>
   <!--Especificaciones de la página web-->
   <meta charset="UTF-8" />
@@ -17,13 +17,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+    <!-- Página de Estilos -->
+  <link rel="stylesheet" href="styles/styles.css">
   <!-- Google Fuente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
-
+<!-- Cuerpo -->
 <body>
   <div class="container-fluid">
     <!-- Barra de Navegación -->
@@ -69,8 +70,8 @@
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Conoce a Eyder Huayta</h2>
-        <p class="seccion-texto">Soy un programador junior con trayectoria académica desarrolladas en el 
-          instituto SENATI. A lo largo de mis estudios, he realizado distintos proyectos donde puse a prueba 
+        <p class="seccion-texto">Soy un programador junior con trayectoria académica desarrolladas en el
+          instituto SENATI. A lo largo de mis estudios, he realizado distintos proyectos donde puse a prueba
           mis conocimientos y habilidades. Busco formar parte de una empresa la cual demuestre
           mis habilidades y las ponga en práctica. Seria un placer aportar mis conocimientos.</p>
       </div>
@@ -82,7 +83,7 @@
         <!-- Fila -->
         <div class="row">
           <div class="col">
-            <img class="img-senati img-fluid" src="img/senati.jpg" alt="senati">
+            <img class="img-senati img-fluid" src="img/Senati-Logo.png" alt="senati">
             <h2 class="seccion-text">Desarrollo de Software en
               Instituto SENATI - 4to semestre.</h2>
           </div>
@@ -97,7 +98,7 @@
         <!-- Fila 1 -->
         <div class="row fila-repo dflex">
           <!-- Columna de mi Página Web -->
-          <div class="col-12 col-lg-6 repositorios">
+          <div class="col-12 col-md-6 col-lg-4 repositorios">
             <h2 class="titulo-repo">Mi página Web</h2>
             <img class="img-repo img-fluid" src="img/pagina-web.png" alt="">
             <div class="nav-item">
@@ -105,28 +106,29 @@
             </div>
           </div>
           <!-- Columna de el Sistema de Facturas -->
-          <div class="col-12 col-lg-6 repositorios">
-            <h2 class="titulo-repo">Sistema de Facturas</h2>
+          <div class="col-12 col-md-6 col-lg-4 repositorios">
+            <h2 class="titulo-repo">Facturas</h2>
             <img class="img-repo img-fluid" src="img/tkinter-python.png" alt="">
             <div class="nav-item">
-              <a class="nav-link texto-de-link2" href="https://github.com/ELEyder/ControlDeFacturas.git" target="_blank">Git Hub</a>
+              <a class="nav-link texto-de-link2" href="https://github.com/ELEyder/ControlDeFacturas.git"
+                target="_blank">Git Hub</a>
             </div>
           </div>
-        </div>
-        <!-- Fila 2 -->
-        <div class="row fila-repo dflex">
           <!-- Columna de el Banco con Sistema de Cuentas -->
-          <div class="col-12 col-lg-6 repositorios">
-            <h2 class="titulo-repo">Banco con Sistema de Cuentas</h2>
-            <img class="img-repo" src="img/banco.png" alt="">
+          <div class="col-12 col-md-6 col-lg-4 repositorios">
+            <h2 class="titulo-repo">Banco</h2>
+            <img class="img-repo img-fluid" src="img/banco.png" alt="">
             <div class="nav-item">
-              <a class="nav-link texto-de-link2" href="https://github.com/ELEyder/Banco_En_Ventana.git" target="_blank">Git Hub</a>
+              <a class="nav-link texto-de-link2" href="https://github.com/ELEyder/Banco_En_Ventana.git"
+                target="_blank">Git Hub</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Seccion de Contacto -->
+    <!-- Píe de página -->
+    <footer>
+      <!-- Seccion de Contacto -->
     <section id="contactos" class="contactos seccion-clara">
       <h2 class="seccion-titulo">Contactos</h2>
       <div class="container iconos-contactos">
@@ -134,17 +136,17 @@
         <div class="row">
           <!-- Columna Whatsapp -->
           <div class="col-12 col-md-4">
-          <a href="https://wa.me/+51919593169/?text=" target="_blank">
-            <img class="img-contacto" src="img/whatsapp.svg" alt="Logo de la pagina">
-          </a>
-          <h5>+51 919593169</h5>
+            <a href="https://wa.me/+51919593169/?text=" target="_blank">
+              <img class="img-contacto" src="img/whatsapp.svg" alt="Logo de la pagina">
+            </a>
+            <h5>+51 919593169</h5>
           </div>
           <!-- Columna GMAIL -->
           <div class="col-12 col-md-4">
-          <a href="mailto:eyderhuayta26@gmail.com" target="_blank">
-            <img class="img-contacto" src="img/envelope-at.svg" alt="Logo de la pagina">
-          </a>
-          <h5>eyderhuayta26@gmail.com</h5>
+            <a href="mailto:eyderhuayta26@gmail.com" target="_blank">
+              <img class="img-contacto" src="img/envelope-at.svg" alt="Logo de la pagina">
+            </a>
+            <h5>eyderhuayta26@gmail.com</h5>
           </div>
           <!-- Columna LINKEDIN -->
           <div class="col-12 col-md-4">
@@ -152,10 +154,11 @@
               <img class="img-contacto" src="img/linkedin.svg" alt="Logo de la pagina">
             </a>
             <h5>eyder-huayta</h5>
-            </div>
+          </div>
         </div>
       </div>
     </section>
+  </footer>
   </div>
 </body>
 
