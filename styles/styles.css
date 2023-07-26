@@ -23,35 +23,39 @@ img.icon{
 .link-sobre-mi{
     color: #0E001E;
 }
+.link-sobre-mi:hover{
+    color: #5100d4;
+    font-weight: bolder;
+}
 .link-formacion{
     color: #0E001E;
+}
+.link-formacion:hover{
+    color: #5100d4;
+    font-weight: bolder;
 }
 .link-proyectos{
     color: #0E001E;
 }
+.link-proyectos:hover{
+    color: #5100d4;
+    font-weight: bolder;
+}
 .link-contactos{
     color: #0E001E;
+}
+.link-contactos:hover{
+    color: #5100d4;
+    font-weight: bolder;
 }
 .link-descarga {
     color: #0E001E;
 }
-/* Ocultar el icono, los textos de arriba y los textos de los contactos
- cuando el taamaño de ancho sea menor a 767px */
-@media screen and (max-width: 767px) {
-    .navbar-brand{
-        display: none;
-    }
+.link-descarga:hover{
+    color: #5100d4;
+    font-weight: bolder;
+}
 
-}
-@media screen and (max-width: 284px) {
-    h5 {
-        display: none;
-    }
-    .img-contacto {
-        margin: 10px;
-        max-width: 30px;
-    }
-}
 /* Parte de mi foto*/
 /* Parte de las secciones generales */
 section {
@@ -140,9 +144,14 @@ img.foto{
 }
 /* Imagen de Senati */
 .img-senati {
-    max-width: 150px;
     margin: 20px;
-    border-radius: 50%
+    height: 150px;
+    width: 150px;
+}
+#senati {
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.5s ease; /* La transición durará 0.5 segundos con una curva de aceleración suave */
 }
 
 /* Texto de mi formacion academica */
@@ -205,4 +214,21 @@ h5 {
     margin: 10px;
     font-size: 18px;
     font-family: Helvetica, sans-serif;
+}
+/* ----------------------------------- Cambios según tamaño de la página ------------------------------------*/
+/* Quitar ícono de el principio para que no aparezca en las opciones desplegables */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+/* Quitar texto de los contactos y bajar el tamaño de los iconnos */
+@media screen and (max-width: 284px) {
+    h5 {
+        display: none;
+    }
+    .img-contacto {
+        margin: 10px;
+        max-width: 30px;
+    }
 }

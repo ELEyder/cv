@@ -70,7 +70,7 @@
     <section class="hero align-items-stretch">
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
         <div class="borde">
-          <img id="miFoto" class="foto rounded-circle" src="img/miCara.png" alt="Eyder Huayta" onclick="cambiarImagen()">
+          <img id="miFoto" class="foto rounded-circle" src="img/miCara.png" alt="Eyder Huayta" onclick="cambiarImagen(this.id)">
         </div>
         <h1>EYDER VICTOR HUAYTA TANTAVILCA</h1>
         <h2>DESARROLLADOR DE SOFTWARE</h2>
@@ -96,7 +96,7 @@
         <!-- Fila -->
         <div class="row">
           <div class="col">
-            <img class="img-senati img-fluid" src="img/Senati-Logo.png" alt="senati">
+            <img id="senati" class="img-senati img-fluid rounded-circle" src="img/senati.png" alt="senati" onclick="cambiarImagen(this.id)">
             <h2 class="seccion-text">Desarrollo de Software en
               Instituto SENATI - 4to semestre.</h2>
             <h2 class="seccion-text">En Curso</h2>
@@ -159,25 +159,32 @@
         <!-- Fila 1 -->
         <div class="row">
           <!-- Columna Whatsapp -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6 col-lg-3">
             <a href="https://wa.me/+51919593169/?text=" target="_blank">
-              <img class="img-contacto" src="img/whatsapp.svg" alt="Logo de la pagina">
+              <img class="img-contacto" src="img/whatsapp.png" alt="Logo de la pagina">
             </a>
             <h5>+51 919593169</h5>
           </div>
           <!-- Columna GMAIL -->
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6 col-lg-3">
             <a href="mailto:eyderhuayta26@gmail.com" target="_blank">
-              <img class="img-contacto" src="img/gmail.svg" alt="Logo de la pagina">
+              <img class="img-contacto" src="img/email.png" alt="Logo de la pagina">
             </a>
             <h5>eyderhuayta26@gmail.com</h5>
           </div>
           <!-- Columna LINKEDIN -->
-          <div class="col-12 col-md-4">
-            <a href="https://www.linkedin.com/in/eyder-huayta/" target="_blank">
-              <img class="img-contacto" src="img/linkedin.svg" alt="Logo de la pagina">
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="https://www.linkedin.com/in/eyder-huayta" target="_blank">
+              <img class="img-contacto" src="img/linkedin.png" alt="Logo de la pagina">
             </a>
             <h5>eyder-huayta</h5>
+          </div>
+          <!-- Columna GITHUB -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="https://github.com/ELEyder" target="_blank">
+              <img class="img-contacto" src="img/github.png" alt="Logo de la pagina">
+            </a>
+            <h5>ELEyder</h5>
           </div>
         </div>
       </div>
