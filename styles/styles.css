@@ -190,7 +190,16 @@ img.foto{
 .texto-de-link2 {
     color: rgb(197, 197, 197);
 }
-
+.tecnologias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tecnologias img{
+    width: 50px;
+    margin: 5px;
+}
 /* ------------------------------------------------- Seccion Contactos ------------------------------------------------- */
 /* Separacion de los objetos de contactos */
 .contactos {
@@ -207,8 +216,9 @@ img.foto{
 }
 /* Tamaño de cada icono */
 .img-contacto {
-    width: 25px;
+    width: 50px;
 }
+
 /* Texto de los contactos */
 h5 {
     margin: 10px;
