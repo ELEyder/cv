@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('font/Helvetica.ttf') format('truetype');
+  }
+
+:root {
+    --font-p: 'Share Tech', sans-serif;
+    --font-s: 'Helvetica', sans-serif;
+    --color-p: #FED82B;
+    --color-s: #D5A042;
+    font-size: 10px;
+}
+body{
+    width: 100%;
+    min-width: 355px;
+}
+html{
+    width: 100%;
+
+}
+h1{
+    font-family: var(--font-p);
+    margin: 0;
+}
+p {
+    font-family: var(--font-s);
+    margin: 0;
+}

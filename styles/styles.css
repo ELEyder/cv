@@ -1,151 +1,220 @@
+@import url("root.css");
+
 /* Fondo que posiblemente no se ve si la pagina tiene contenido */
-body{
-    background-color: #0E001E;
-    min-width: 290px;
-}
-/* Barra de Navegacion */
-/* Color de la parte superior de la pagina donde está los botones y el icono */
-.container-fluid{
-    padding: 0px;
-    background-color: #D8FBF7;
-}
+/*-------------------------------------------------------- Barra de Navegacion --------------------------------------------------------*/
 /* Margen entre los elementos de container-fluid y los costados */
 .navbar {
     padding: 2rem;
     position: fixed;
-    background-color: #D8FBF7;
-}
-nav {
+    background-color: var(--color-p);
     width: 100%;
-    height: 4rem;
+    height: 6rem;
+    font-size: 1.5rem;
 }
 /* Icono de Inicio */
 img.icon{
-    height: 30px;
-    width: 30px;
+    height: 3rem;
+    width: 3rem;
 }
 /* Colores de las barras de arriba  */
-.link-sobre-mi{
-    color: #0E001E;
+a.link{
+    font-family: var(--font-s);
+    font-weight: 500;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.link-sobre-mi:hover{
-    color: #5100d4;
-    font-weight: bolder;
+/* Colores de las barras de arriba MANTENIENDO CURSOR*/
+a.link:hover{
+    color: #000000;
 }
-.link-formacion{
-    color: #0E001E;
+li{
+    border-radius: 10px;
+    transition: 0.5s;
 }
-.link-formacion:hover{
-    color: #5100d4;
-    font-weight: bolder;
+li:hover {
+    background-color: rgba(0, 0, 0, 0.080);
 }
-.link-proyectos{
-    color: #0E001E;
+/*-------------------------------------------------------- Seccion de mi FOTO --------------------------------------------------------*/
+section.principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    background-color: black;
+    height: 500px;
 }
-.link-proyectos:hover{
-    color: #5100d4;
-    font-weight: bolder;
-}
-.link-contactos{
-    color: #0E001E;
-}
-.link-contactos:hover{
-    color: #5100d4;
-    font-weight: bolder;
-}
-.link-descarga {
-    color: #0E001E;
-}
-.link-descarga:hover{
-    color: #5100d4;
-    font-weight: bolder;
-}
-
-/* Parte de mi foto*/
-/* Parte de las secciones generales */
-section {
+.contenido-principal{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-/* Fondo de todo */
-.hero {
-    min-height: 450px;
-    text-align: center;
-    background-color: #D8FBF7;
+    align-items: center;
 }
 /* Mi foto */
 img.foto{
-    margin: 0px;
     height: 150px;
     width: 150px;
 }
 #miFoto {
     cursor: pointer;
-    transition: opacity 0.5s ease; /* La transición durará 0.5 segundos con una curva de aceleración suave */
+    transition: opacity 0.5s ease;
   }
 .borde {
-    background-color: #0E001E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--color-p);
     border-radius: 50%;
-    padding: 10px;
+    width: 160px;
+    height: 160px;
+    
 }
-/* Separacion del contenido */
-.hero-principal {
-    margin-top: 4rem;
-    padding: 3rem;
+.borde:hover {
+    transition-duration: 1s;
+    transform: scale(2);
 }
-/* fuente de el nombre completo */
-.hero-principal h1{
-    font-family: 'Archivo Black', cursive;
+.contenido-principal h1{
+    color: var(--color-p);
+    font-weight: 1000;
     font-size: 2.5rem;
+    margin-top: 10px;
 }
-/* fuente y color de descripcion corta */
-.hero-principal h2{
-    color: #0E001E;
+.contenido-principal p{
+    color: white;
     font-size: 1.5rem;
+    margin-top: 10px;
+}
+.tecnologias{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tecnologias img{
+    width: 50px;
+    margin: 10px;
 }
 /* -------------------------------- Conoce a Eyder Fondo y letras ------------------------------------------------------------- */
 /* Colores de texto y fondo de cada seccion */
-.seccion-oscura{
-    color: white;
-    background-color: #0E001E;
-}
-.seccion-clara {
-    color: black;
-    background-color: #D8FBF7;
+section.sobre-mi{
+    width: 100%;
+    background-color: var(--color-p);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Tamaño de la seccion */
-.sobre-mi {
-    height: 500px;
-    padding: 10px;
+.contenido-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* EL titulo de esta Seccion */
-.seccion-titulo {
-    font-size: 2rem;
-    padding: 15px 0;
-    font-family: 'Archivo Black', cursive;
+.contenido-sobre-mi h1{
+    color: black;
+    font-size: 3rem;
 }
 /* Tamaño que abarca el texto */
-.sobre-mi .contenedor {
+.contenido-sobre-mi p{
+    color: black;
     max-width: 600px;
+    font-size: 1.5rem;
     text-align: center;
+    padding-top: 10px;
+}
+/* ------------------------------------------------------- Seccion de PROYECTOS ---------------------------------------------*/
+section.proyectos{
+    width: 100%;
+    padding: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-proyectos h1{
+    color: var(--color-p);
+}
+.contenido-proyectos h2{
+    color: white;
+}
+.contenido-proyectos p{
+    color: var(--color-p);
+}
+/* Separar cada repositorio */
+.repositorios {
+    background-color: #0f0f0f;
+    padding: 25px;
+    border-radius: 40px;
+    border: solid 10px #000000;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* titulo */
+/* Color del contenedor de los repositorios */
+/* Titulo de los repositorios */
+.titulo-repo {
+    font-weight: bold;
+    color: var(--color-p);
+}
+/* Imagenes de los repositorios */
+.img-repo {
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+}
+/* Link para el github */
+.texto-de-link2 {
+    color: rgb(197, 197, 197);
+    font-size: 1.5rem;
+}
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* ------------------------------------------------ FORMACION --------------------------------------------------*/
-/* Titulo de mi formacion academica */
-.formacion .seccion-titulo{
-    color: black;
-}
 /* Tamaño de la seccion y alineacion*/
 .formacion {
+    background-color: var(--color-p);
     height: 500px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* Color del Contenedor de texto e imagen*/
-.formacion .contenedor{
-    text-align: center;
+.contenido-formacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-formacion h1{
     color: black;
-    max-width: 600px;
+    text-align: center;
+}
+.contenido-formacion p{
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.senati {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* Imagen de Senati */
 .img-senati {
@@ -154,7 +223,6 @@ img.foto{
     width: 150px;
 }
 #senati {
-    position: relative;
     cursor: pointer;
     transition: opacity 0.5s ease; /* La transición durará 0.5 segundos con una curva de aceleración suave */
 }
@@ -163,57 +231,19 @@ img.foto{
 .formacion .seccion-text{
     font-size: 1.2rem;
 }
-/* ------------------------------------------------------- Seccion de PROYECTOS ---------------------------------------------*/
-/* margen de los repositorios dentro de la seccion proyecto */
-.proyectos {
-    padding: 40px 0px 50px 0px;
-}
-/* Separar cada repositorio */
-.repositorios {
-    padding: 25px;
-}
-/* titulo */
-.proyectos .seccion-titulo{
-    text-align: center;
-    color: D8FBF7;
-    background-color: #0E001E;
-}
-/* Color del contenedor de los repositorios */
-.fila-repo {
-    background-color: #0E001E;
-}
-/* Titulo de los repositorios */
-.titulo-repo {
-    font-weight: bold;
-}
-/* Imagenes de los repositorios */
-.img-repo {
-    border-radius: 20px;
-    margin: 20px 0 20px 0;
-}
-/* Link para el github */
-.texto-de-link2 {
-    color: rgb(197, 197, 197);
-}
-.tecnologias{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.tecnologias img{
-    width: 50px;
-    margin: 5px;
-}
 /* ------------------------------------------------- Seccion Contactos ------------------------------------------------- */
 /* Separacion de los objetos de contactos */
 .contactos {
     padding: 20px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.contactos .seccion-titulo{
-    color: black;
+h1.seccion-titulo {
+    color: var(--color-p);
 }
-
 /* separacion de cada icono */
 .iconos-contactos {
     margin: 10px;
@@ -229,6 +259,7 @@ h5 {
     margin: 10px;
     font-size: 18px;
     font-family: Helvetica, sans-serif;
+    color: white;
 }
 /* ----------------------------------- Cambios según tamaño de la página ------------------------------------*/
 /* Quitar ícono de el principio para que no aparezca en las opciones desplegables */
