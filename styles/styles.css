@@ -70,10 +70,10 @@ img.foto{
     height: 160px;
     
 }
-.borde:hover {
+/* .borde:hover {
     transition-duration: 1s;
     transform: scale(2);
-}
+} */
 .contenido-principal h1{
     color: var(--color-p);
     font-weight: 1000;
