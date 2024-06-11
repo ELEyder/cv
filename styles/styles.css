@@ -192,7 +192,7 @@ section.proyectos{
 /* ------------------------------------------------ FORMACION --------------------------------------------------*/
 /* Tamaño de la seccion y alineacion*/
 .formacion {
-    background-color: var(--color-p);
+    background-color: black;
     height: 500px;
     padding: 10px;
     display: flex;
@@ -206,11 +206,11 @@ section.proyectos{
     align-items: center;
 }
 .contenido-formacion h1{
-    color: black;
+    color: white;
     text-align: center;
 }
 .contenido-formacion p{
-    color: black;
+    color: white;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -238,6 +238,7 @@ section.proyectos{
 /* ------------------------------------------------- Seccion Contactos ------------------------------------------------- */
 /* Separacion de los objetos de contactos */
 .contactos {
+    height: 400px;
     padding: 20px;
     background-color: #000000;
     display: flex;
@@ -247,6 +248,9 @@ section.proyectos{
 }
 h1.seccion-titulo {
     color: var(--color-p);
+}
+.contactos-icons{
+    padding: 20px;
 }
 /* separacion de cada icono */
 .iconos-contactos {
