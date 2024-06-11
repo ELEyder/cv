@@ -173,7 +173,7 @@ section.proyectos{
     transition: ease 0.2s;
 }
 .img-repo:hover {
-    scale: 1.5;
+    scale: 2;
 }
 /* Parte inferior del repositorio  */
 .footer-repo {
@@ -238,7 +238,7 @@ section.proyectos{
 /* ------------------------------------------------- Seccion Contactos ------------------------------------------------- */
 /* Separacion de los objetos de contactos */
 .contactos {
-    height: 400px;
+    min-height: 400px;
     padding: 20px;
     background-color: #000000;
     display: flex;
@@ -275,6 +275,9 @@ h5 {
     .navbar-brand{
         display: none;
     }
+    .img-repo:hover {
+        scale: 1.1;
+    }
 }
 /* Quitar texto de los contactos y bajar el tamaño de los iconnos */
 @media screen and (max-width: 284px) {
@@ -285,4 +288,8 @@ h5 {
         margin: 10px;
         max-width: 30px;
     }
+}
+
+.options-var {
+    background-color: var(--color-p);
 }
