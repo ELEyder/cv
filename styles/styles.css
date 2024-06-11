@@ -86,21 +86,20 @@ img.foto{
     margin-top: 10px;
 }
 .tecnologias{
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 .tecnologias img{
     width: 50px;
-    margin: 10px;
 }
 /* -------------------------------- Conoce a Eyder Fondo y letras ------------------------------------------------------------- */
 /* Colores de texto y fondo de cada seccion */
 section.sobre-mi{
     width: 100%;
-    background-color: var(--color-p);
+    background-color: black;
     height: 500px;
     display: flex;
     align-items: center;
@@ -115,12 +114,12 @@ section.sobre-mi{
 }
 /* EL titulo de esta Seccion */
 .contenido-sobre-mi h1{
-    color: black;
+    color: white;
     font-size: 3rem;
 }
 /* Tamaño que abarca el texto */
 .contenido-sobre-mi p{
-    color: black;
+    color: white;
     max-width: 600px;
     font-size: 1.5rem;
     text-align: center;
@@ -152,15 +151,13 @@ section.proyectos{
 }
 /* Separar cada repositorio */
 .repositorios {
-    background-color: #0f0f0f;
-    padding: 25px;
-    border-radius: 40px;
-    border: solid 10px #000000;
-    aspect-ratio: 1/1;
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 /* titulo */
 /* Color del contenedor de los repositorios */
@@ -168,12 +165,19 @@ section.proyectos{
 .titulo-repo {
     font-weight: bold;
     color: var(--color-p);
+    padding: 20px;
 }
 /* Imagenes de los repositorios */
 .img-repo {
     aspect-ratio: 16/9;
-    border-radius: 20px;
-    margin: 20px 0 20px 0;
+    transition: ease 0.2s;
+}
+.img-repo:hover {
+    scale: 1.5;
+}
+/* Parte inferior del repositorio  */
+.footer-repo {
+    padding: 20px;
 }
 /* Link para el github */
 .texto-de-link2 {
