@@ -172,9 +172,6 @@ section.proyectos{
     aspect-ratio: 16/9;
     transition: ease 0.2s;
 }
-.img-repo:hover {
-    scale: 2;
-}
 /* Parte inferior del repositorio  */
 .footer-repo {
     padding: 20px;
