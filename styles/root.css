@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Helvetica';
-    src: url('font/Helvetica.ttf') format('truetype');
+    src: url('../font/Helvetica.ttf') format('truetype');
   }
 
 :root {
