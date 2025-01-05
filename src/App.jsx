@@ -1,8 +1,5 @@
 import { useState } from 'react';
 import { Image, Tooltip } from 'antd'
-import logo from './assets/img/icon.png'
-import miCara from './assets/img/miCara.png'
-import miCara2 from './assets/img/miCara2.png'
 import senati1 from './assets/img/senati.png'
 import senati2 from './assets/img/senati2.png'
 import senati3 from './assets/img/senati3.png'
@@ -23,110 +20,21 @@ import email from './assets/img/contactos/email.svg'
 import github from './assets/img/contactos/github.svg'
 import linkedin from './assets/img/contactos/linkedin.svg'
 import whatsapp from './assets/img/contactos/whatsapp.svg'
-import cv from './assets/pdf/cv.pdf'
+import NavBar from './components/NavBar';
+import Main from './components/Main';
 import './App.css';
 
 function App() {
-  const [face, setFace] = useState({key: 0, img: miCara})
   const [senati, setSenati] = useState({key: 0, img: senati1})
 
-  const imgsFace = [miCara, miCara2];
   const imgsSenati = [senati1, senati2, senati3];
 
   return (
     <>
       {/* ------------------------------------------------ Barra de Navegación ------------------------------------------------ */}
-      <nav className="navbar navbar-expand-md" style={{ zIndex: 10 }}>
-        <div className="container-fluid options-var">
-          {/* Botón para mostrar las opciones en modo móvil */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-toggler"
-            aria-controls="navbar-toggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          {/* Opciones de navegación */}
-          <div className="collapse navbar-collapse opciones" id="navbar-toggler">
-            <a className="navbar-brand" href="#">
-              <img className="icon" src={logo} alt="Logo de la página" />
-            </a>
-            <ul className="navbar-nav d-flex justify-content-center align-items-center">
-              <li className="nav-item">
-                <a className="nav-link link" href="#sobre-mi">
-                  Sobre Mí
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link link" href="#proyectos">
-                  Proyectos
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link link" href="#formacion">
-                  Formación Académica
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link link" href="#contactos">
-                  Contáctame
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link link" target="_blank" href={cv} rel="noopener noreferrer">
-                  Descargar CV
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+      <NavBar/>
       {/* ------------------------------------------------ Contenido Principal ------------------------------------------------ */}
-      <section className="principal">
-        <div className="contenido-principal">
-          <div className="borde">
-            <img
-              id="miFoto"
-              className="foto rounded-circle"
-              src={face.img}
-              alt="Eyder Huayta"
-              onClick={() => {
-                face.key += 1
-                if (face.key == imgsFace.length) face.key = 0
-                setFace({key: face.key, img: imgsFace[face.key]})
-              }}
-            />
-          </div>
-          <div className="titulo">
-            <h1>EYDER VICTOR HUAYTA TANTAVILCA</h1>
-          </div>
-          <div className="sub-titulo">
-            <p>DESARROLLADOR DE SOFTWARE</p>
-          </div>
-          <div className="tecnologias">
-            {[
-              { title: "react", img: react },
-              { title: "js", img: js },
-              { title: "python", img: python },
-              { title: "java", img: java },
-              { title: "csharp", img: csharp },
-              { title: "sql", img: sql },
-              { title: "php", img: php },
-            ].map((t) => (
-              <Tooltip key={t.title} title={t.title}>
-                <img src={t.img} alt={t.title} />
-              </Tooltip>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <Main/>
       {/* ------------------------------------------------ Sección: Sobre Mí ------------------------------------------------ */}
       <section id="sobre-mi" className="sobre-mi">
         <div className="contenido-sobre-mi">

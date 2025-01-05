@@ -59,14 +59,15 @@ img.foto{
     transition: opacity 0.5s ease;
   }
 .borde {
+    background-image: url("/src/assets/img/8d61b2d160270e20be39cdfff9a2b551.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:var(--color-p);
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    
+    width: 205px;
+    height: 205px;
 }
 /* .borde:hover {
     transition-duration: 1s;
