@@ -59,7 +59,7 @@ img.foto{
     transition: opacity 0.5s ease;
   }
 .borde {
-    background-image: url("/src/assets/img/8d61b2d160270e20be39cdfff9a2b551.gif");
+    background-image: url("/src/assets/img/border.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,7 +74,7 @@ img.foto{
     transform: scale(2);
 } */
 .contenido-principal h1{
-    color: var(--color-p);
+    color: var(--color-s);
     font-weight: 1000;
     font-size: 2.5rem;
     margin-top: 10px;
@@ -114,11 +114,13 @@ section.sobre-mi{
 }
 /* EL titulo de esta Seccion */
 .contenido-sobre-mi h1{
-    color: white;
+    color: var(--color-p);
     font-size: 3rem;
+    font-weight: 500;
 }
 /* Tamaño que abarca el texto */
 .contenido-sobre-mi p{
+    
     color: white;
     max-width: 600px;
     font-size: 1.5rem;
@@ -141,7 +143,8 @@ section.proyectos{
     align-items: center;
 }
 .contenido-proyectos h1{
-    color: var(--color-p);
+    color: var(--color-s);
+    font-weight: 1000;
 }
 .contenido-proyectos h2{
     color: white;
@@ -164,7 +167,7 @@ section.proyectos{
 /* Titulo de los repositorios */
 .titulo-repo {
     font-weight: bold;
-    color: var(--color-p);
+    color: var(--color-s);
     padding: 20px;
 }
 /* Imagenes de los repositorios */
@@ -203,8 +206,9 @@ section.proyectos{
     align-items: center;
 }
 .contenido-formacion h1{
-    color: white;
+    color: var(--color-p);
     text-align: center;
+    font-weight: 500;
 }
 .contenido-formacion p{
     color: white;
@@ -244,7 +248,9 @@ section.proyectos{
     justify-content: center;
 }
 h1.seccion-titulo {
-    color: var(--color-p);
+    color: var(--color-s);
+    font-weight: 1000;
+
 }
 .contactos-icons{
     padding: 20px;
