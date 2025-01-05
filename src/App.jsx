@@ -27,18 +27,11 @@ import cv from './assets/pdf/cv.pdf'
 import './App.css';
 
 function App() {
-  const [face, setFace] = useState(miCara)
-  const [senati, setSenati] = useState(senati1)
+  const [face, setFace] = useState({key: 0, img: miCara})
+  const [senati, setSenati] = useState({key: 0, img: senati1})
 
-  class imagenes {
-    constructor(...args) {
-      this.contador = 0;
-      this.imagenes = args;
-    }
-  }
-
-  const objFace = new imagenes(miCara, miCara2);
-  const objSenati = new imagenes(senati1, senati2, senati3);
+  const imgsFace = [miCara, miCara2];
+  const imgsSenati = [senati1, senati2, senati3];
 
   return (
     <>
@@ -101,14 +94,12 @@ function App() {
             <img
               id="miFoto"
               className="foto rounded-circle"
-              src={face}
+              src={face.img}
               alt="Eyder Huayta"
               onClick={() => {
-                objFace.contador += 1
-                if (objFace.contador == objFace.imagenes.length) {
-                  objFace.contador = 0
-                }
-                setFace(objFace.imagenes[objFace.contador])
+                face.key += 1
+                if (face.key == imgsFace.length) face.key = 0
+                setFace({key: face.key, img: imgsFace[face.key]})
               }}
             />
           </div>
@@ -219,19 +210,19 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* ------------------------------------------------ Sección: Proyectos ------------------------------------------------ */}
       <section id="formacion" className="formacion">
         <div className="contenido-formacion">
           <h1>FORMACIÓN ACADÉMICA</h1>
           {/* <!-- Fila --> */}
           <div className="row">
             <div className="col senati">
-              <img id="senati" className="img-senati img-fluid rounded-circle" src={senati} alt="senati"
+              <img id="senati" className="img-senati img-fluid rounded-circle" src={senati.img} alt="senati"
                 onClick={() => {
-                  objSenati.contador += 1
-                  if (objSenati.contador == objSenati.imagenes.length) {
-                    objSenati.contador = 0
-                  }
-                  setSenati(objSenati.imagenes[objSenati.contador])
+                  senati.key += 1
+                  if (senati.key == imgsSenati.length) senati.key = 0
+                  setSenati({key: senati.key, img: imgsSenati[senati.key]})
                 }} />
               <p>Desarrollo de Software - SENATI</p>
               <p>Finalizado</p>
