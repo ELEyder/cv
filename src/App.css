@@ -1,0 +1,290 @@
+/* Fondo que posiblemente no se ve si la pagina tiene contenido */
+/*-------------------------------------------------------- Barra de Navegacion --------------------------------------------------------*/
+/* Margen entre los elementos de container-fluid y los costados */
+.navbar {
+    padding: 2rem;
+    position: fixed;
+    background-color: var(--color-p);
+    width: 100%;
+    height: 6rem;
+    font-size: 1.5rem;
+}
+/* Icono de Inicio */
+img.icon{
+    height: 3rem;
+    width: 3rem;
+}
+/* Colores de las barras de arriba  */
+a.link{
+    font-family: var(--font-s);
+    font-weight: 500;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* Colores de las barras de arriba MANTENIENDO CURSOR*/
+a.link:hover{
+    color: #000000;
+}
+li{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+li:hover {
+    background-color: rgba(0, 0, 0, 0.080);
+}
+/*-------------------------------------------------------- Seccion de mi FOTO --------------------------------------------------------*/
+section.principal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    background-color: black;
+    height: 500px;
+}
+.contenido-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Mi foto */
+img.foto{
+    height: 150px;
+    width: 150px;
+}
+#miFoto {
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+  }
+.borde {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--color-p);
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    
+}
+/* .borde:hover {
+    transition-duration: 1s;
+    transform: scale(2);
+} */
+.contenido-principal h1{
+    color: var(--color-p);
+    font-weight: 1000;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+.contenido-principal p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.tecnologias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.tecnologias img{
+    width: 50px;
+}
+/* -------------------------------- Conoce a Eyder Fondo y letras ------------------------------------------------------------- */
+/* Colores de texto y fondo de cada seccion */
+section.sobre-mi{
+    width: 100%;
+    background-color: black;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Tamaño de la seccion */
+.contenido-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* EL titulo de esta Seccion */
+.contenido-sobre-mi h1{
+    color: white;
+    font-size: 3rem;
+}
+/* Tamaño que abarca el texto */
+.contenido-sobre-mi p{
+    color: white;
+    max-width: 600px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10px;
+}
+/* ------------------------------------------------------- Seccion de PROYECTOS ---------------------------------------------*/
+section.proyectos{
+    width: 100%;
+    padding: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-proyectos h1{
+    color: var(--color-p);
+}
+.contenido-proyectos h2{
+    color: white;
+}
+.contenido-proyectos p{
+    color: var(--color-p);
+}
+/* Separar cada repositorio */
+.repositorios {
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+/* titulo */
+/* Color del contenedor de los repositorios */
+/* Titulo de los repositorios */
+.titulo-repo {
+    font-weight: bold;
+    color: var(--color-p);
+    padding: 20px;
+}
+/* Imagenes de los repositorios */
+.img-repo {
+    aspect-ratio: 16/9;
+    transition: ease 0.2s;
+}
+/* Parte inferior del repositorio  */
+.footer-repo {
+    padding: 20px;
+}
+/* Link para el github */
+.texto-de-link2 {
+    color: rgb(197, 197, 197);
+    font-size: 1.5rem;
+}
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------------------------------ FORMACION --------------------------------------------------*/
+/* Tamaño de la seccion y alineacion*/
+.formacion {
+    background-color: black;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-formacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-formacion h1{
+    color: white;
+    text-align: center;
+}
+.contenido-formacion p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.senati {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Imagen de Senati */
+.img-senati {
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+}
+#senati {
+    cursor: pointer;
+    transition: opacity 0.5s ease; /* La transición durará 0.5 segundos con una curva de aceleración suave */
+}
+
+/* Texto de mi formacion academica */
+.formacion .seccion-text{
+    font-size: 1.2rem;
+}
+/* ------------------------------------------------- Seccion Contactos ------------------------------------------------- */
+/* Separacion de los objetos de contactos */
+.contactos {
+    min-height: 400px;
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1.seccion-titulo {
+    color: var(--color-p);
+}
+.contactos-icons{
+    padding: 20px;
+}
+/* separacion de cada icono */
+.iconos-contactos {
+    margin: 10px;
+    text-align: center;
+}
+/* Tamaño de cada icono */
+.img-contacto {
+    width: 50px;
+}
+
+/* Texto de los contactos */
+h5 {
+    margin: 10px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+/* ----------------------------------- Cambios según tamaño de la página ------------------------------------*/
+/* Quitar ícono de el principio para que no aparezca en las opciones desplegables */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+    .img-repo:hover {
+        scale: 1.1;
+    }
+}
+/* Quitar texto de los contactos y bajar el tamaño de los iconnos */
+@media screen and (max-width: 284px) {
+    h5 {
+        display: none;
+    }
+    .img-contacto {
+        margin: 10px;
+        max-width: 30px;
+    }
+}
+
+.options-var {
+    background-color: var(--color-p);
+}
