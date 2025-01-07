@@ -61,7 +61,7 @@ function Projects() {
             <div key={title} className="col-12 col-md-6 col-lg-4 repositorios">
               <h2 className="titulo-repo">{title}</h2>
               <div className="imagenes">
-                <Image className="img-repo img-fluid" src={img} alt={title} />
+                <Image src={img} alt={title} />
               </div>
               <div className="footer-repo">
                 <div className="tecnologias">

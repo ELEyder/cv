@@ -27,3 +27,7 @@ p {
   font-family: var(--font-s);
   margin: 0;
 }
+
+a {
+  text-decoration: none !important;
+}
