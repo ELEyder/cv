@@ -23,7 +23,7 @@ function App() {
         components: {
           Menu: {
             popupBg: primaryColor,
-            itemBg: primaryColor
+            itemBg: 'white'
           },
         },
       }}

@@ -1,0 +1,61 @@
+.principal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  background-color: black;
+  height: 500px;
+}
+.contenido{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Mi foto */
+.foto{
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+  border-radius: 50%;
+}
+
+.borde {
+  background-image: url("/src/assets/img/border.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 205px;
+  height: 205px;
+}
+/* .borde:hover {
+  transition-duration: 1s;
+  transform: scale(2);
+} */
+.titulo{
+  color: var(--color-s);
+  font-weight: 1000;
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+.subtitulo{
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.tecnologias{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.tech{
+  width: 50px;
+}

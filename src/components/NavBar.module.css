@@ -2,7 +2,7 @@
 /* Margen entre los elementos de container-fluid y los costados */
 .navbar {
     position: fixed;
-    background-color: var(--color-p);
+    background-color: white;
     width: 100%;
     z-index: 10;
 }

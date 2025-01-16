@@ -11,17 +11,18 @@ import js from '../assets/img/tecnologias/js.svg'
 import php from '../assets/img/tecnologias/php.svg'
 import python from '../assets/img/tecnologias/python.svg'
 import sql from '../assets/img/tecnologias/sql.svg'
+
+import styles from './Main.module.css'
 function Main() {
   const [face, setFace] = useState({ key: 0, img: miCara })
   const imgsFace = [miCara, miCara2];
 
   return (
-    <section className="principal">
-      <div className="contenido-principal">
-        <div className="borde">
+    <section className={styles.principal}>
+    <div className={styles.contenido}>
+        <div className={styles.borde}>
           <img
-            id="miFoto"
-            className="foto rounded-circle"
+            className={styles.foto}
             src={face.img}
             alt="Eyder Huayta"
             onClick={() => {
@@ -31,10 +32,10 @@ function Main() {
             }}
           />
         </div>
-        <div className="titulo">
+        <div className={styles.titulo}>
           <h1>EYDER VICTOR HUAYTA TANTAVILCA</h1>
         </div>
-        <div className="sub-titulo">
+        <div className={styles.subtitulo}>
           <p>DESARROLLADOR DE SOFTWARE</p>
         </div>
         <div className="tecnologias">
@@ -48,7 +49,7 @@ function Main() {
             { title: "php", img: php },
           ].map((t) => (
             <Tooltip key={t.title} title={t.title}>
-              <img src={t.img} alt={t.title} />
+              <img className={styles.tech} src={t.img} alt={t.title} />
             </Tooltip>
           ))}
         </div>
