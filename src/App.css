@@ -34,67 +34,7 @@ section.sobre-mi{
     padding-top: 10px;
 }
 /* ------------------------------------------------------- Seccion de PROYECTOS ---------------------------------------------*/
-section.proyectos{
-    width: 100%;
-    padding: 60px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contenido-proyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contenido-proyectos h1{
-    color: var(--color-s);
-    font-weight: 1000;
-}
-.contenido-proyectos h2{
-    color: white;
-}
-.contenido-proyectos p{
-    color: var(--color-p);
-}
-/* Separar cada repositorio */
-.repositorios {
-    background-color: rgb(15, 15, 15);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-}
-/* titulo */
-/* Color del contenedor de los repositorios */
-/* Titulo de los repositorios */
-.titulo-repo {
-    font-weight: bold;
-    color: var(--color-s);
-    padding: 20px;
-}
-/* Imagenes de los repositorios */
-.img-repo {
-    aspect-ratio: 16/9;
-    transition: ease 0.2s;
-}
-/* Parte inferior del repositorio  */
-.footer-repo {
-    padding: 20px;
-}
-/* Link para el github */
-.texto-de-link2 {
-    color: rgb(197, 197, 197);
-    font-size: 1.5rem;
-}
-.nav-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /* ------------------------------------------------ FORMACION --------------------------------------------------*/
 /* Tamaño de la seccion y alineacion*/
 .formacion {

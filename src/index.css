@@ -21,7 +21,7 @@ html{
   width: 100%;
 
 }
-h1{
+h1, h2{
   font-family: var(--font-p);
   margin: 0;
 }

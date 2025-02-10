@@ -1,23 +1,25 @@
-import { Image, Tooltip } from 'antd'
+import { Image, Tooltip } from 'antd';
 
-import proyecto1 from '../assets/img/proyectos/proyecto1.png'
-import proyecto2 from '../assets/img/proyectos/proyecto2.png'
-import proyecto3 from '../assets/img/proyectos/proyecto3.png'
-import proyecto4 from '../assets/img/proyectos/proyecto4.png'
+import proyecto1 from '../assets/img/proyectos/proyecto1.png';
+import proyecto2 from '../assets/img/proyectos/proyecto2.png';
+import proyecto3 from '../assets/img/proyectos/proyecto3.png';
+import proyecto4 from '../assets/img/proyectos/proyecto4.png';
 
-import react from '../assets/img/tecnologias/react.svg'
-import django from '../assets/img/tecnologias/django.svg'
-import firebase from '../assets/img/tecnologias/firebase.svg'
-import java from '../assets/img/tecnologias/java.svg'
-import php from '../assets/img/tecnologias/php.svg'
-import sql from '../assets/img/tecnologias/sql.svg'
+import react from '../assets/img/tecnologias/react.svg';
+import django from '../assets/img/tecnologias/django.svg';
+import firebase from '../assets/img/tecnologias/firebase.svg';
+import java from '../assets/img/tecnologias/java.svg';
+import php from '../assets/img/tecnologias/php.svg';
+import sql from '../assets/img/tecnologias/sql.svg';
+
+import styles from './Projects.module.css';
 
 function Projects() {
   return (
-    <section id="proyectos" className="proyectos">
-      <div className="contenido-proyectos gap-5">
-        <h1 className="titulo">PROYECTOS</h1>
-        <div className="row justify-content-center gap-5">
+    <section id="proyectos" className={styles.proyectos}>
+      <div className={`${styles.contenido} gap-5`}>
+        <h1 className={styles.titulo}>PROYECTOS</h1>
+        <div className={styles.repositorios}>
           {[
             {
               title: "CV Web",
@@ -58,31 +60,29 @@ function Projects() {
               img: proyecto4,
             },
           ].map(({ title, tech, repo, img }) => (
-            <div key={title} className="col-12 col-md-6 col-lg-4 repositorios">
-              <h2 className="titulo-repo">{title}</h2>
-              <div className="imagenes">
+            <div key={title} className={styles.repositorio}>
+              <h2 className={styles.tituloRepo}>{title}</h2>
+              <div  className={styles.img}>
                 <Image src={img} alt={title} />
               </div>
-              <div className="footer-repo">
-                <div className="tecnologias">
+              <div className={styles.footerRepo}>
+                <div className={styles.tecnologias}>
                   {tech.map((t) => (
                     <Tooltip key={t.title} title={t.title}>
-                      <img src={t.img} alt={t.title} />
+                      <img className={styles.tech} src={t.img} alt={t.title} />
                     </Tooltip>
                   ))}
                 </div>
-                <div className="nav-item">
-                  <a className="nav-link texto-de-link2" href={repo} target="_blank" rel="noopener noreferrer">
+                  <a href={repo} target="_blank" rel="noopener noreferrer">
                     Ver código en GitHub
                   </a>
-                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Projects;

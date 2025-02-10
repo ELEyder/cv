@@ -15,7 +15,7 @@ function NavBar() {
   return (
     <nav className={styles.navbar}>
       <Menu
-        mode="horizontal"
+        mode="vertical"
         items={items} />
     </nav>
   )
