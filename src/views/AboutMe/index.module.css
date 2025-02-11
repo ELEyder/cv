@@ -7,6 +7,8 @@
 
 .text {
   width: 50%;
+    padding: 0 80px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +23,8 @@
 
 .media {
   width: 50%;
+    padding: 0 50px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,13 +49,19 @@
   }
   .text {
     width: 100%;
-    padding: 0;
+    padding: 0 80px;
     align-items: center;
+    text-align: center;
+    p {
+      display: none;
+    }
   }
   .media {
     width: 100%;
+    padding: 0 10px;
+    display: none;
     .banner{
-      width: 50%;
+      width: 65%;
     }
   }
   

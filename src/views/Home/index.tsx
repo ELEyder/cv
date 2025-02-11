@@ -1,7 +1,8 @@
 import Menu from "../../components/Menu/Menu";
 import styles from "./index.module.css";
 import { MenuItem } from "../../types/MenuItem";
-import AboutMe from "./AboutMe";
+import AboutMe from "../AboutMe";
+import Projects from "../Projects";
 import { ReactComponent as HomeSvg } from '../../assets/svg/home.svg';
 import { ReactComponent as FolderSvg } from '../../assets/svg/folder.svg';
 import { ReactComponent as HistorySvg } from '../../assets/svg/history.svg';
@@ -20,7 +21,7 @@ function Home() {
       <Menu items={menuItems} />
       <div className={styles.sections}>
         <AboutMe />
-        <AboutMe />
+        <Projects />
       </div>
     </main>
   );
