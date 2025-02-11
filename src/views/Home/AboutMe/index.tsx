@@ -1,5 +1,6 @@
 import styles from "./index.module.css";
 import Button from "../../../components/Button/Button";
+import { ReactComponent as Logo } from '../../../assets/logo.svg';
 
 function AboutMe() {
 
@@ -7,7 +8,6 @@ function AboutMe() {
         <section className={styles.aboutMe} id="#">
           <div className={styles.text}>
             <div className={styles.content}>
-
             <h1>Hola, soy Eyder</h1>
             <p>Desarrollador Web</p>
             <Button onClick={() => {
@@ -16,7 +16,7 @@ function AboutMe() {
             </div>
           </div>
           <div className={styles.media}>
-            <img src="logo.svg" alt="logo" />
+            <Logo />
           </div>
         </section>
   );

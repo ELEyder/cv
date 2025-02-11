@@ -25,6 +25,9 @@
   justify-content: center;
 }
 
+
+
+
 @media (max-width: 768px) {
   .aboutMe {
     flex-direction: column-reverse;
