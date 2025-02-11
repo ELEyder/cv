@@ -27,9 +27,13 @@ html, body {
   min-width: 390px;
 }
 
-h1, p {
+h1, h2, p {
   margin: 0;
   color: var(--text-color);
+}
+
+h1 {
+  font-size: 36px;
 }
 
 a {

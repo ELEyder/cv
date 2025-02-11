@@ -86,7 +86,7 @@ function Projects() {
                   width="100%"
                 />
                 <div className={styles.text}>
-                <h1>{project.name}</h1>
+                <h2>{project.name}</h2>
                 <p>{project.description}</p>
                 </div>
               </div>
