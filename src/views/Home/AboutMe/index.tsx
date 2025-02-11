@@ -6,11 +6,14 @@ function AboutMe() {
   return (
         <section className={styles.aboutMe} id="#">
           <div className={styles.text}>
+            <div className={styles.content}>
+
             <h1>Hola, soy Eyder</h1>
             <p>Desarrollador Web</p>
             <Button onClick={() => {
               window.open('pdf/EYDER_HUAYTA.pdf', '_blank')
             }}>Descargar CV</Button>
+            </div>
           </div>
           <div className={styles.media}>
             <img src="logo.svg" alt="logo" />
