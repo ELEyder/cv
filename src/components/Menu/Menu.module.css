@@ -1,9 +1,9 @@
 .menu {
   display: flex;
-  position: sticky;
-  top: 70px;
+  position: fixed;
   flex-direction: column;
-  width: 300px;
+  justify-content: center;
+  width: fit-content;
   height: 100%;
   a {
     padding: 10px;
@@ -15,6 +15,10 @@
       padding: 2px;
       border-radius: 50%;
     }
+
+    span {
+      display: none;
+    }
   }
   a:hover {
     background-color: #eeeeee;
@@ -25,7 +29,6 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .menu {
     position: fixed;
@@ -34,5 +37,4 @@
       display: none;
     }
   }
-  
 }

@@ -1,0 +1,11 @@
+<svg id="theme-switch" width="80" height="40" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;">
+  <!-- Fondo del switch -->
+  <rect x="0" y="0" width="80" height="40" rx="20" fill="#ddd" class="switch-bg" />
+
+  <!-- Círculo (Sol/Luna) -->
+  <circle cx="20" cy="20" r="15" fill="yellow" class="switch-circle" />
+
+  <!-- Icono de luna (oculto por defecto) -->
+  <circle cx="24" cy="16" r="8" fill="#ddd" class="moon" style="opacity: 0;" />
+
+</svg>

@@ -20,6 +20,7 @@ function Home() {
       <Menu items={menuItems} />
       <div className={styles.sections}>
         <AboutMe />
+        <AboutMe />
       </div>
     </main>
   );
