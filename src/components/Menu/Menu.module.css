@@ -1,0 +1,37 @@
+.menu {
+  display: flex;
+  position: sticky;
+  top: 70px;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  a {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      padding: 2px;
+      border-radius: 50%;
+    }
+  }
+  a:hover {
+    background-color: #eeeeee;
+    img {
+      padding: 2px;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    width: fit-content;
+    span {
+      display: none;
+    }
+  }
+  
+}

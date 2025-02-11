@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  a {
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  a:hover {
+    background-color: #eeeeee;
+  }
+}
+
+img.logo {
+  height: 100%;
+  width: auto;
+}
