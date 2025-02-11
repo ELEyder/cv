@@ -4,13 +4,16 @@ import styles from "./Header.module.css";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 
 function Header() {
-
   return (
     <header className={styles.header}>
       <Logo />
       <nav className={styles.nav}>
-        <Link to="/">Inicio</Link>
-        <Link to="/blog">Blog</Link>
+        <Link to="/">
+          <span>{"<"}</span>Inicio <span>{" />"}</span>
+        </Link>
+        <Link to="/blog">
+          <span>{"<"}</span>Blog <span>{" />"}</span>
+        </Link>
         <ThemeSwitch />
       </nav>
     </header>

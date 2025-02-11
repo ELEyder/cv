@@ -3,12 +3,13 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  --primary-color: #ff8a8a;
+  --primary-color: hsl(264, 51%, 71%);;
   --secondary-color: #f4deb3;
   --link-color: #5f6368;
   --text-color: black;
   --body-color: #FAFAFA;
   --svg-color: #5f6368;
+  --sun-color: #FED330;
 }
 
 #root {
@@ -23,7 +24,7 @@ html, body {
   flex-direction: column;
   background-color: var(--body-color);
   scroll-behavior: smooth;
-
+  min-width: 390px;
 }
 
 h1, p {

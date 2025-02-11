@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function ThemeSwitch() {
-  const [isDarkMode, setTheme] = useState(true);
+  const [isDarkMode, setTheme] = useState(false);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -28,7 +28,7 @@ function ThemeSwitch() {
       height="40px"
       viewBox="0 0 80 40"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ cursor: "pointer" }}
+      style={{ cursor: "pointer", padding: "10px 20px" }}
     >
       {/* Fondo del switch */}
       <rect
