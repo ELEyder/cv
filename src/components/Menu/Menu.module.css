@@ -5,28 +5,25 @@
   justify-content: center;
   width: fit-content;
   height: 100%;
-  a {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+}
 
-    svg {
-      padding: 2px;
-      border-radius: 50%;
-    }
+.link {
+  width: 32px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  svg {
+    padding: 2px;
+    border-radius: 50%;
+  }
 
-    span {
-      display: none;
-    }
+  span {
+    display: none;
   }
-  a:hover {
-    background-color: #eeeeee;
-    svg {
-      padding: 2px;
-      border-radius: 50%;
-    }
-  }
+}
+.link:hover {
+  background-color: #eeeeee;
 }
 
 @media (max-width: 768px) {

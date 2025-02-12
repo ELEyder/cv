@@ -3,7 +3,7 @@ import Button from "../../components/Button/Button";
 
 function AboutMe() {
   return (
-        <section className={styles.aboutMe} id="#">
+        <section className={styles.aboutMe} id="aboutMe">
           <div className={styles.text}>
             <div className={styles.content}>
             <h1>Hola, Soy Eyder - Desarrollador Full Stack</h1>
