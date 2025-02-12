@@ -1,0 +1,1 @@
+import{j as o}from"./index-RAXfXLkZ.js";const t="_footer_1dw3s_1",s={footer:t};function e(){return o.jsx("footer",{className:s.footer,children:o.jsx("img",{src:"./img/bg2.gif",alt:""})})}export{e as default};
