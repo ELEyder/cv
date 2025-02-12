@@ -1,8 +1,9 @@
 .aboutMe {
   display: flex;
-  height: 100vh;
+  min-height: 600px;
+  height: 100dvh;;
   align-items: center;
-  background: linear-gradient(to right, transparent 50%, var(--primary-color) 50%);
+  background: linear-gradient(to right, var(--body-color) 50%, var(--primary-color) 50%);
 }
 
 .text {
@@ -41,7 +42,7 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background: var(--body-color);
     .content {
       flex-direction: column;
       align-items: center;

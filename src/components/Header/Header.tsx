@@ -6,7 +6,7 @@ import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
 function Header() {
   return (
     <header className={styles.header}>
-      <Logo />
+      <Logo className={styles.logo}/>
       <nav className={styles.nav}>
         <Link to="/">
           <span>{"<"}</span>Inicio <span>{" />"}</span>

@@ -31,7 +31,7 @@ function Home() {
       <div className={styles.sections}>
         <Suspense fallback={<div  style={{
           width : "100wh",
-          height : "100vh",
+          height : "100vh;",
           display: "flex",
           alignItems: "center",
           justifyContent: "center"
