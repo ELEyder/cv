@@ -24,10 +24,10 @@ function Projects() {
     },
     {
       img: "p2",
-      name: "Kaliffo-ERP",
+      name: "Kaliffo - ERP",
       github: "https://github.com/ELEyder/kaliffo-erp",
       deploy: "https://eleyder.github.io/cv/",
-      description: "ERP para una empresa textil",
+      description: "ERP para la empresa Kaliffo que optimiza la gestión de ventas, facturación y devoluciones, mejorando el control y la eficiencia en sus operaciones.",
       techs: [
         {
           name: "React",
@@ -44,7 +44,7 @@ function Projects() {
       name: "CinesCat",
       github: "https://github.com/ELEyder/kaliffo-erp",
       deploy: "https://eleyder.github.io/cv/",
-      description: "ERP para una empresa textil",
+      description: "Cine",
       techs: [
         {
           name: "React",
@@ -53,32 +53,6 @@ function Projects() {
         {
           name: "Spring Boot",
           icon: <Spring />
-        },
-      ],
-    },
-    {
-      img: "p2",
-      name: "Kaliffo-ERP",
-      github: "https://github.com/ELEyder/kaliffo-erp",
-      deploy: "https://eleyder.github.io/cv/",
-      description: "ERP para una empresa textil",
-      techs: [
-        {
-          name: "React",
-          icon: <React/>
-        },
-      ],
-    },
-    {
-      img: "p2",
-      name: "Kaliffo-ERP",
-      github: "https://github.com/ELEyder/kaliffo-erp",
-      deploy: "https://eleyder.github.io/cv/",
-      description: "ERP para una empresa textil",
-      techs: [
-        {
-          name: "React",
-          icon: <React/>
         },
       ],
     },
