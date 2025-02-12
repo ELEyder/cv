@@ -18,11 +18,11 @@ const Footer = lazy(() => import("../Footer"));
 
 function Home() {
   const menuItems: MenuItem[] = [
-    { href: "#aboutMe", icon: <HomeSvg />, label: "Sobre mí" },
-    { href: "#projects", icon: <FolderSvg />, label: "Proyectos" },
-    { href: "#skills", icon: <SkillsSvg />, label: "Habilidades" },
-    { href: "#exp", icon: <CaseSvg />, label: "Experiencia" },
-    { href: "#contacts", icon: <ContactsSvg />, label: "Contactos" },
+    { href: "aboutMe", icon: <HomeSvg />, label: "Sobre mí" },
+    { href: "projects", icon: <FolderSvg />, label: "Proyectos" },
+    { href: "skills", icon: <SkillsSvg />, label: "Habilidades" },
+    { href: "exp", icon: <CaseSvg />, label: "Experiencia" },
+    { href: "contacts", icon: <ContactsSvg />, label: "Contactos" },
   ];
 
   return (
@@ -31,7 +31,7 @@ function Home() {
       <div className={styles.sections}>
         <Suspense fallback={<div  style={{
           width : "100wh",
-          height : "100vh;",
+          height : "100vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center"

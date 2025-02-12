@@ -1,6 +1,7 @@
 import styles from "./Menu.module.css";
 import { MenuItem } from "../../types/MenuItem";
 import { Tooltip } from "antd";
+import { Link } from "react-scroll";
 
 interface MenuProps {
   items: MenuItem[];
@@ -11,10 +12,10 @@ const Menu: React.FC<MenuProps> = ({ items }) => {
     <nav className={styles.menu}>
       {items.map((item, index) => (
         <Tooltip title={item.label} placement="right">
-          <a key={index} href={item.href} className={styles.link}>
+          <Link key={index} duration={100} to={item.href} className={styles.link}>
             {item.icon}
             <span>{item.label}</span>
-          </a>
+          </Link>
         </Tooltip>
       ))}
     </nav>

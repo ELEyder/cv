@@ -41,7 +41,7 @@ const CONTACTS = [
 
 const Contacts: React.FC = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="contacts">
       <h1>Contacto</h1>
       <div className={styles.contactList}>
         {CONTACTS.map((contact, index) => (
