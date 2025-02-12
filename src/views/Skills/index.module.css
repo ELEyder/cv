@@ -4,16 +4,17 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: var(--body-color);
+  background: var(--secondary-color);
   gap: 50px;
   padding: 80px;
   box-sizing: border-box;
   h1 {
-    color: var(--text-color);
+    color: var(--body-color);
   }
 }
 
 .tools {
+  background-color: var(--body-color);
   border: 4px solid var(--primary-color);
   border-radius: 20px;
   padding: 60px 20px;
@@ -85,12 +86,8 @@
   fill: #ff6c37; /* Naranja de Postman */
 }
 
-@media (max-width: 1169px) {
-  .projects {
-    background: linear-gradient(
-      45deg,
-      transparent 70%,
-      var(--secondary-color) 70%
-    );
+@media (max-width: 500px) {
+  .skills {
+    padding: 60px;
   }
 }

@@ -1,0 +1,59 @@
+.exp {
+  background-color: var(--body-color);
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  background:  var(--body-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.duration {
+  color: var(--svg-color);
+}
+
+.description {
+  color: var(--text-color);
+  margin-top: 8px;
+}
+
+.techList {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techTag {
+  background: var(--primary-color);
+  color: var(--body-color);
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .exp {
+    padding: 60px;
+  }
+}

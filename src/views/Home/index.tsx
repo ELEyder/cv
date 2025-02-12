@@ -4,6 +4,9 @@ import { MenuItem } from "../../types/MenuItem";
 import AboutMe from "../AboutMe";
 import Projects from "../Projects";
 import Skills from "../Skills";
+import Exp from "../Exp";
+import Contacts from "../Contacts";
+import Footer from "../Footer";
 import { ReactComponent as HomeSvg } from '../../assets/svg/home.svg';
 import { ReactComponent as FolderSvg } from '../../assets/svg/folder.svg';
 import { ReactComponent as SkillsSvg } from '../../assets/svg/hammer.svg';
@@ -26,6 +29,9 @@ function Home() {
         <AboutMe />
         <Projects />
         <Skills />
+        <Exp />
+        <Contacts />
+        <Footer />
       </div>
     </main>
   );

@@ -1,18 +1,15 @@
 .projects {
+  background-color: var(--body-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   align-items: center;
-  background: var(--secondary-color);
-  background: linear-gradient(45deg, transparent 70%, var(--secondary-color) 70%);
   gap: 50px;
   padding: 80px;
   box-sizing: border-box;
-  h1 {
-    color: black
-  }
+
 }
 
 .cards{
@@ -30,7 +27,7 @@
   background-color: var(--body-color);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0px 3px var(--secondary-color);
+  box-shadow: 0px 3px var(--primary-color);
   transform: translateY(-1px);
   transition: all 0.1s ease-in;
 }
@@ -86,16 +83,9 @@
   }
 }
 
-@media (max-width: 1179px) {
-  .projects {
-    background: linear-gradient(45deg, transparent 80%, var(--secondary-color) 80%);
-  }
-  }
-
 @media (max-width: 768px) {
   .projects {
     padding: 100px;
-    background: linear-gradient(45deg, transparent 85%, var(--secondary-color) 85%);
   }
 
   .cards{
