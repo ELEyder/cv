@@ -1,0 +1,1 @@
+import{j as o}from"./index-DNb3pjtg.js";const s="_footer_1j1h7_1",e="_img_1j1h7_23",t={footer:s,img:e};function i(){return o.jsx("footer",{className:t.footer,children:o.jsx("img",{className:t.img,src:"./img/bg2.gif",alt:""})})}export{i as default};
