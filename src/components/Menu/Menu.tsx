@@ -1,6 +1,5 @@
 import styles from "./Menu.module.css";
 import { MenuItem } from "../../types/MenuItem";
-import { Tooltip } from "antd";
 import { Link } from "react-scroll";
 
 interface MenuProps {
