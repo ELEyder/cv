@@ -1,5 +1,4 @@
 .container {
-
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
@@ -31,6 +30,13 @@
   transition: all 0.3s;
 }
 
+.contactItem:hover {
+  color: var(--secondary-color);
+  svg,path {
+    fill: var(--secondary-color);
+  }
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -38,6 +44,7 @@
     fill: var(--body-color);
   }
 }
+
 
 @media (max-width: 500px) {
   .container {

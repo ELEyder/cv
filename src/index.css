@@ -43,9 +43,6 @@ a {
   font-weight: 600;
 }
 
-a:hover {
-  color: black;
-}
 
 svg, path{
   height: 100%;
