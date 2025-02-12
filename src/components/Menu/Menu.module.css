@@ -22,9 +22,7 @@
     display: none;
   }
 }
-.link:hover {
-  background-color: #eeeeee;
-}
+
 
 @media (max-width: 768px) {
   .menu {

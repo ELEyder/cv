@@ -86,10 +86,16 @@
   }
 }
 
+@media (max-width: 1179px) {
+  .projects {
+    background: linear-gradient(45deg, transparent 80%, var(--secondary-color) 80%);
+  }
+  }
+
 @media (max-width: 768px) {
   .projects {
     padding: 100px;
-
+    background: linear-gradient(45deg, transparent 85%, var(--secondary-color) 85%);
   }
 
   .cards{
@@ -101,9 +107,8 @@
   }
 }
 
-@media (max-width: 1169px) {
-.projects {
-  background: linear-gradient(45deg, transparent 70%, var(--secondary-color) 70%);
-
-}
+@media (max-width: 500px) {
+  .projects {
+    padding: 60px;
+  }
 }

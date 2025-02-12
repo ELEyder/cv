@@ -4,19 +4,93 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: var(--secondary-color);
+  background: var(--body-color);
   gap: 50px;
   padding: 80px;
   box-sizing: border-box;
   h1 {
-    color: black
+    color: var(--text-color);
   }
 }
 
+.tools {
+  border: 4px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 60px 20px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool {
+  svg {
+    width: 64px;
+  }
+}
+.react path {
+  fill: #61dafb; /* Azul claro de React */
+}
+
+.ts path {
+  fill: #3178c6; /* Azul de TypeScript */
+}
+
+.node path {
+  fill: #68a063; /* Verde de Node.js */
+}
+
+.django path {
+  fill: #0e4933; /* Verde oscuro de Django */
+}
+
+.spring path {
+  fill: #6db33f; /* Verde de Spring */
+}
+
+.php path {
+  fill: #777bb4; /* Azul púrpura de PHP */
+}
+
+.mysql path {
+  fill: #00758f; /* Azul oscuro de MySQL */
+}
+
+.firebase path {
+  fill: #ffca28; /* Amarillo de Firebase */
+}
+
+.figma path {
+  fill: #f21e1e; /* Rojo de Figma */
+}
+
+.tailwind path {
+  fill: #38bdf8; /* Azul de Tailwind CSS */
+}
+
+.next path {
+  fill: var(--text-color)
+}
+
+.xampp path {
+  fill: #fb7a24; /* Naranja de XAMPP */
+}
+
+.git path {
+  fill: #f05032; /* Naranja de Git */
+}
+
+.postman path {
+  fill: #ff6c37; /* Naranja de Postman */
+}
 
 @media (max-width: 1169px) {
-.projects {
-  background: linear-gradient(45deg, transparent 70%, var(--secondary-color) 70%);
-
-}
+  .projects {
+    background: linear-gradient(
+      45deg,
+      transparent 70%,
+      var(--secondary-color) 70%
+    );
+  }
 }
