@@ -1,17 +1,20 @@
+import { lazy, Suspense } from "react";
 import Menu from "../../components/Menu/Menu";
 import styles from "./index.module.css";
 import { MenuItem } from "../../types/MenuItem";
-import AboutMe from "../AboutMe";
-import Projects from "../Projects";
-import Skills from "../Skills";
-import Exp from "../Exp";
-import Contacts from "../Contacts";
-import Footer from "../Footer";
-import { ReactComponent as HomeSvg } from '../../assets/svg/home.svg';
-import { ReactComponent as FolderSvg } from '../../assets/svg/folder.svg';
-import { ReactComponent as SkillsSvg } from '../../assets/svg/hammer.svg';
-import { ReactComponent as CaseSvg } from '../../assets/svg/case.svg';
-import { ReactComponent as ContactsSvg } from '../../assets/svg/contacts.svg';
+import { ReactComponent as HomeSvg } from "../../assets/svg/home.svg";
+import { ReactComponent as FolderSvg } from "../../assets/svg/folder.svg";
+import { ReactComponent as SkillsSvg } from "../../assets/svg/hammer.svg";
+import { ReactComponent as CaseSvg } from "../../assets/svg/case.svg";
+import { ReactComponent as ContactsSvg } from "../../assets/svg/contacts.svg";
+
+// Carga diferida de los componentes
+const AboutMe = lazy(() => import("../AboutMe"));
+const Projects = lazy(() => import("../Projects"));
+const Skills = lazy(() => import("../Skills"));
+const Exp = lazy(() => import("../Exp"));
+const Contacts = lazy(() => import("../Contacts"));
+const Footer = lazy(() => import("../Footer"));
 
 function Home() {
   const menuItems: MenuItem[] = [
@@ -26,12 +29,14 @@ function Home() {
     <main className={styles.main}>
       <Menu items={menuItems} />
       <div className={styles.sections}>
-        <AboutMe />
-        <Projects />
-        <Skills />
-        <Exp />
-        <Contacts />
-        <Footer />
+        <Suspense fallback={<div>Cargando...</div>}>
+          <AboutMe />
+          <Projects />
+          <Skills />
+          <Exp />
+          <Contacts />
+          <Footer />
+        </Suspense>
       </div>
     </main>
   );
