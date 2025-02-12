@@ -48,11 +48,23 @@
   h1, p {
     color: var(--text-color);
   }
+
 }
 
+.techs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 36px;
+  }
+}
 @media (max-width: 768px) {
   .projects {
     padding: 100px;
+
   }
 
   .cards{
@@ -62,4 +74,11 @@
   .card {
     width: 100%;
   }
+}
+
+@media (max-width: 1169px) {
+.projects {
+  background: linear-gradient(45deg, transparent 70%, var(--secondary-color) 70%);
+
+}
 }
