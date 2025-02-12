@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./views/Home";
 import Error from "./views/Error";
@@ -12,7 +12,7 @@ function Routing() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
         </Route>
-        <Route path="/*" element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );

@@ -29,7 +29,15 @@ function Home() {
     <main className={styles.main}>
       <Menu items={menuItems} />
       <div className={styles.sections}>
-        <Suspense fallback={<div>Cargando...</div>}>
+        <Suspense fallback={<div  style={{
+          width : "100wh",
+          height : "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }}>
+          <img src="./logo.svg" />
+          </div>}>
           <AboutMe />
           <Projects />
           <Skills />
