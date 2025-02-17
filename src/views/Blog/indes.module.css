@@ -1,7 +1,32 @@
-.content {
-  width : 100wh;
-  height : 100vh;
+.blog {
   display: flex;
+  height: 600px;
   align-items: center;
+  background: url(/img/bg3.jpg)
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: var(--shadown);
+  h1 {
+    color: var(--body-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    background: var(--body-color)
+  }
+  .content {
+    background: transparent;
+    h1 {
+      color: var(--text-color);
+    }
+  }
 }

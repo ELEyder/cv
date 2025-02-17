@@ -31,10 +31,7 @@
 }
 
 .contactItem:hover {
-  color: var(--secondary-color);
-  svg,path {
-    fill: var(--secondary-color);
-  }
+  background-color: var(--primary-color);
 }
 
 .icon {

@@ -7,7 +7,13 @@
   box-sizing: border-box;
 }
 
+.logo path{
+  fill: var(--text-color);
+}
 
+.logo2 path{
+  fill: var(--body-color);
+}
 
 .nav {
   display: flex;

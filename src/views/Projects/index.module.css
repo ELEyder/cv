@@ -67,6 +67,10 @@
   }
 }
 
+.svg path {
+  fill: var(--text-color);
+}
+
 .footer {
   display: flex;
   flex-direction: column;

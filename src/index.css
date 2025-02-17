@@ -10,6 +10,7 @@
   --body-color: #FAFAFA;
   --svg-color: #5f6368;
   --sun-color: #FED330;
+  --shadown: #00000065;
 }
 
 #root {
@@ -47,7 +48,6 @@ a {
 svg, path{
   height: 100%;
   width: auto;
-  fill: var(--svg-color);
 }
 
 

@@ -18,11 +18,11 @@ const Footer = lazy(() => import("../Footer"));
 
 function Home() {
   const menuItems: MenuItem[] = [
-    { href: "aboutMe", icon: <HomeSvg />, label: "Sobre mí" },
-    { href: "projects", icon: <FolderSvg />, label: "Proyectos" },
-    { href: "skills", icon: <SkillsSvg />, label: "Habilidades" },
-    { href: "exp", icon: <CaseSvg />, label: "Experiencia" },
-    { href: "contacts", icon: <ContactsSvg />, label: "Contactos" },
+    { href: "aboutMe", icon: <HomeSvg className={styles.svg}/>, label: "Sobre mí" },
+    { href: "projects", icon: <FolderSvg className={styles.svg}/>, label: "Proyectos" },
+    { href: "skills", icon: <SkillsSvg className={styles.svg}/>, label: "Habilidades" },
+    { href: "exp", icon: <CaseSvg className={styles.svg}/>, label: "Experiencia" },
+    { href: "contacts", icon: <ContactsSvg className={styles.svg}/>, label: "Contactos" },
   ];
 
   return (

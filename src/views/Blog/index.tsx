@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
-import styles from "./indes.module.css"
+import styles from "./indes.module.css";
 
 function Blog() {
   return (
-    <div className={styles.content}>
-      <Link to={"/"}>Próximamente</Link>
-    </div>
+    <section className={styles.blog} id="blog">
+      <div className={styles.content}>
+        <h1>One Blog</h1>
+      </div>
+    </section>
   );
 }
 

@@ -22,7 +22,7 @@ function Projects() {
       techs: [
         {
           name: "React",
-          icon: <React/>
+          icon: <React className={styles.svg}/>
         },
       ],
     },
@@ -35,15 +35,15 @@ function Projects() {
       techs: [
         {
           name: "React",
-          icon: <React/>
+          icon: <React className={styles.svg}/>
         },
         {
           name: "Node Js",
-          icon: <Node />
+          icon: <Node className={styles.svg}/>
         },
         {
           name: "MySQL",
-          icon: <MySQL />
+          icon: <MySQL className={styles.svg}/>
         },
       ],
     },
@@ -56,15 +56,15 @@ function Projects() {
       techs: [
         {
           name: "React",
-          icon: <React/>
+          icon: <React className={styles.svg}/>
         },
         {
           name: "Spring Boot",
-          icon: <Spring />
+          icon: <Spring className={styles.svg}/>
         },
         {
           name: "MySQL",
-          icon: <MySQL />
+          icon: <MySQL className={styles.svg}/>
         },
       ],
     },
@@ -77,15 +77,15 @@ function Projects() {
       techs: [
         {
           name: "React",
-          icon: <React/>
+          icon: <React className={styles.svg}/>
         },
         {
           name: "Node Js",
-          icon: <Node />
+          icon: <Node className={styles.svg}/>
         },
         {
           name: "Firebase",
-          icon: <Firebase />
+          icon: <Firebase className={styles.svg}/>
         },
       ],
     },
@@ -98,11 +98,11 @@ function Projects() {
       techs: [
         {
           name: "Django",
-          icon: <DJango />
+          icon: <DJango className={styles.svg}/>
         },
         {
           name: "Firebase",
-          icon: <Firebase />
+          icon: <Firebase className={styles.svg}/>
         },
       ],
     },
@@ -115,11 +115,11 @@ function Projects() {
       techs: [
         {
           name: "PHP",
-          icon: <PHP />
+          icon: <PHP className={styles.svg}/>
         },
         {
           name: "MySQL",
-          icon: <MySQL />
+          icon: <MySQL className={styles.svg}/>
         },
       ],
     },
@@ -154,10 +154,10 @@ function Projects() {
                   </div>
                   <div className={styles.footer}>
                   <a className={styles.linkFooter} href={project.github} target="_blank">
-                    <GitHub /> <p>Ver en GitGub</p>
+                    <GitHub className={styles.svg}/> <p>Ver en GitGub</p>
                   </a>
                   <a className={styles.linkFooter} href={project.deploy} target="_blank">
-                  <Internet /> <p>Demo Frontend</p>
+                  <Internet className={styles.svg} /> <p>Demo Frontend</p>
                   </a>
                   </div>
                 </div>
