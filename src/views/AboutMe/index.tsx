@@ -9,7 +9,7 @@ function AboutMe() {
             <h1>Hola, Soy Eyder - Desarrollador Full Stack</h1>
             <p>Desarrollador junior enfocado en crear aplicaciones web con React. Con experiencia en APIs REST y Java Spring Boot, me apasiona aprender y mejorar continuamente mis habilidades en desarrollo web.</p>
             <Button onClick={() => {
-              window.open('pdf/EYDER_HUAYTA.pdf', '_blank')
+              window.open('pdf/EYDER_VICTOR_HUAYTA_TANTAVILCA.pdf', '_blank')
             }}>Descargar CV</Button>
             </div>
           </div>
