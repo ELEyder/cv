@@ -3,6 +3,7 @@ import Layout from "./Layout";
 import Home from "./views/Home";
 import Error from "./views/Error";
 import Blog from "./views/Blog";
+import BlogDetail from "./views/BlogDetail";
 
 function Routing() {
   return (
@@ -11,6 +12,7 @@ function Routing() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>

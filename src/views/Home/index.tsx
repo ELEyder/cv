@@ -14,7 +14,6 @@ const Projects = lazy(() => import("../Projects"));
 const Skills = lazy(() => import("../Skills"));
 const Exp = lazy(() => import("../Exp"));
 const Contacts = lazy(() => import("../Contacts"));
-const Footer = lazy(() => import("../Footer"));
 
 function Home() {
   const menuItems: MenuItem[] = [
@@ -43,7 +42,6 @@ function Home() {
           <Skills />
           <Exp />
           <Contacts />
-          <Footer />
         </Suspense>
       </div>
     </main>

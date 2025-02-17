@@ -4,13 +4,10 @@
   align-items: center;
   justify-content: center;
   min-height: 100dvh;;
-  background: var(--secondary-color);
+  background: var(--body-color);
   gap: 50px;
   padding: 80px;
   box-sizing: border-box;
-  h1 {
-    color: var(--body-color);
-  }
 }
 
 .tools {

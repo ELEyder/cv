@@ -130,9 +130,9 @@ function Projects() {
       <section className={styles.projects} id="projects">
         <h1>Proyectos</h1>
         <div className={styles.cards}>
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             return (
-              <div className={styles.card}>
+              <div key={index} className={styles.card} >
                 <Image
                   className={styles.imgProject}
                   src={`./img/projects/${project.img}.png`}
@@ -144,8 +144,8 @@ function Projects() {
                   <h2>{project.name}</h2>
                   <p className={styles.description}>{project.description}</p>
                   <div className={styles.techs}>
-                    {project.techs.map((tech) => {
-                      return <div className={styles.tech}>
+                    {project.techs.map((tech, index) => {
+                      return <div key={index} className={styles.tech}>
                         <Tooltip title={tech.name}>
                           {tech.icon}
                         </Tooltip>

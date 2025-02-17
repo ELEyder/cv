@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-function Blog() {
+function Footer() {
   return (
     <footer className={styles.footer}>
       <img className={styles.img} src="./img/bg/bg2.gif" alt="" />
@@ -8,4 +8,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Footer;

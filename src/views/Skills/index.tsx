@@ -15,7 +15,7 @@ import { ReactComponent as Xampp } from "../../assets/tech/xampp.svg";
 import { ReactComponent as Git } from "../../assets/tech/git.svg";
 import { ReactComponent as Postman } from "../../assets/tech/postman.svg";
 
-function Projects() {
+function Skills() {
   const SKILLS = [
     {
       name: "React",
@@ -79,9 +79,9 @@ function Projects() {
       <section className={styles.skills} id="skills">
         <h1>Habilidades</h1>
         <div className={styles.tools}>
-          {SKILLS.map((skill) => {
+          {SKILLS.map((skill, index) => {
             return (
-              <Tooltip title={skill.name}>
+              <Tooltip key={index} title={skill.name}>
                 <div className={styles.tool}>
                 {skill.icon}
                 </div>
@@ -94,4 +94,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Skills;

@@ -9,13 +9,13 @@ function ThemeSwitch() {
       document.documentElement.style.setProperty("--link-color", "white");
       document.documentElement.style.setProperty("--text-color", "white");
       document.documentElement.style.setProperty("--svg-color", "white");
-      document.documentElement.style.setProperty("--shadown", "hsl(264, 51%, 71%)");
+      document.documentElement.style.setProperty("--shadown", "#000000b3");
     } else {
       document.documentElement.style.setProperty("--body-color", "#FAFAFA");
       document.documentElement.style.setProperty("--link-color", "#5f6368");
       document.documentElement.style.setProperty("--text-color", "black");
       document.documentElement.style.setProperty("--svg-color", "#5f6368");
-      document.documentElement.style.setProperty("--shadown", "#00000065");
+      document.documentElement.style.setProperty("--shadown", "#ffffffcc");
     }
   }, [isDarkMode]); // Solo se ejecuta cuando cambia isDarkMode
 

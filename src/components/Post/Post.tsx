@@ -1,17 +1,20 @@
 import { Timestamp } from "firebase/firestore";
 import styles from "./Post.module.css";
+import { useNavigate } from "react-router-dom";
 interface PropPost {
+  id: string;
   title: string;
   dateCreate: Timestamp;
   content: string;
   type: "generic";
 }
 
-const Post = ({ title, dateCreate, content, type }: PropPost) => {
+const Post = ({ id, title, dateCreate, content, type }: PropPost) => {
+  const navigate = useNavigate()
   const img =
     type == "generic" ? "img/posts/generic.jpg" : "img/posts/generic.jpg";
   return (
-    <div className={styles.post}>
+    <div className={styles.post} onClick={()=>navigate(`/blog/${id}`)}>
       <img className={styles.img} src={img} alt={type} />
       <div className={styles.content}> 
       <h2>{title}</h2>

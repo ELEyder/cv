@@ -1,5 +1,5 @@
 .exp {
-  background-color: var(--body-color);
+  background-color: var(--secondary-color);
   display: flex;
   gap: 40px;
   flex-direction: column;
@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: center;
   padding: 80px;
+  h1 {
+    color: black
+  }
 }
 
 .experienceList {
