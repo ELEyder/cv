@@ -40,6 +40,7 @@ function Blog() {
             return (
               <div key={index}>
                 <h1>{blog.title}</h1>
+                <p>{blog.dateCreate.toDate().getFullYear()}</p> {/* Mostrar el contenido del blog */}
                 <p>{blog.content}</p> {/* Mostrar el contenido del blog */}
               </div>
             );
