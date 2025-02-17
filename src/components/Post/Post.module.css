@@ -1,0 +1,35 @@
+.post {
+  overflow: hidden;
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 20px 20px 0 0;
+  background-color: var(--body-color);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;  
+  aspect-ratio: 1.92;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.summary {
+  font-size: 1em;
+  color: #333;
+}

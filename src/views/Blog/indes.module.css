@@ -2,7 +2,7 @@
   display: flex;
   height: 600px;
   align-items: center;
-  background: url(/img/bg3.jpg)
+  background: url(/img/bg/bg3.jpg)
 }
 
 .content {
@@ -17,6 +17,14 @@
   h1 {
     color: var(--body-color);
   }
+}
+
+
+.blogs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
 }
 
 @media (max-width: 768px) {

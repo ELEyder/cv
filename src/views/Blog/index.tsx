@@ -3,12 +3,14 @@ import { db } from "../../firestore/app";
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from "react";
 import { Timestamp } from "firebase/firestore";
+import Post from "../../components/Post/Post";
 // Definir la interfaz para un blog
 interface Blog {
   id: string;
   title: string;
   content: string;
   dateCreate: Timestamp;
+  type: "generic";
 }
 
 function Blog() {
@@ -36,13 +38,9 @@ function Blog() {
         </div>
       </section>
       <section className={styles.blogs} id="blogs">
-          {blogs.map((blog, index) => {
+          {blogs.map((blog) => {
             return (
-              <div key={index}>
-                <h1>{blog.title}</h1>
-                <p>{blog.dateCreate.toDate().getFullYear()}</p> {/* Mostrar el contenido del blog */}
-                <p>{blog.content}</p> {/* Mostrar el contenido del blog */}
-              </div>
+              <Post key={blog.id} title={blog.title} content={blog.content} dateCreate={blog.dateCreate} type={blog.type}/>
             );
           })}
       </section>
