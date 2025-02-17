@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+import styles from "./indes.module.css"
+
 function Blog() {
   return (
-    <>
-      <h1>Próximamente</h1>
-    </>
+    <div className={styles.content}>
+      <Link to={"/"}>Próximamente</Link>
+    </div>
   );
 }
 
