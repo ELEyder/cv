@@ -2,25 +2,18 @@ import styles from "./indes.module.css";
 import { db } from "../../firestore/app";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { Timestamp } from "firebase/firestore";
 import Post from "../../components/Post/Post";
+import type { IBlog } from "../../types/IBlog";
 // Definir la interfaz para un blog
-interface Blog {
-  id: string;
-  title: string;
-  content: string;
-  dateCreate: Timestamp;
-  type: "generic";
-}
 
 function Blog() {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [blogs, setBlogs] = useState<IBlog[]>([]);
 
   const fetchData = async () => {
     try {
       const querySnapshot = await getDocs(collection(db, "blogs"));
       setBlogs(
-        querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() } as Blog))
+        querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() } as IBlog))
       );
     } catch (error) {
       console.error("Error fetching blogs: ", error);

@@ -2,21 +2,14 @@ import styles from "./indes.module.css";
 import { db } from "../../firestore/app";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { Timestamp } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import Loading from "../../components/Loading";
+import type { IBlog } from "../../types/IBlog";
 
-interface Blog {
-  id: string;
-  title: string;
-  content: string;
-  dateCreate: Timestamp;
-  type: "generic";
-}
 
 function Blog() {
   const { id } = useParams<{ id?: string }>();
-  const [blog, setBlog] = useState<Blog | null>(null);
+  const [blog, setBlog] = useState<IBlog | null>(null);
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
@@ -28,7 +21,7 @@ function Blog() {
       const docRef = doc(db, "blogs", id);
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
-        setBlog({ id: docSnap.id, ...docSnap.data() } as Blog);
+        setBlog({ id: docSnap.id, ...docSnap.data() } as IBlog);
         setLoading(false);
       } else {
         console.error("No se encontró el blog");

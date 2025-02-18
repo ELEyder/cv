@@ -1,25 +1,28 @@
-import { Timestamp } from "firebase/firestore";
 import styles from "./Post.module.css";
 import { useNavigate } from "react-router-dom";
-interface PropPost {
-  id: string;
-  title: string;
-  dateCreate: Timestamp;
-  content: string;
-  type: "generic";
-}
+import type { IBlog } from "../../types/IBlog";
+import { Image } from "antd";
 
-const Post = ({ id, title, dateCreate, content, type }: PropPost) => {
-  const navigate = useNavigate()
+const Post = ({ id, title, dateCreate, content, type }: IBlog) => {
+  const navigate = useNavigate();
   const img =
-    type == "generic" ? "img/posts/generic.jpg" : "img/posts/generic.jpg";
+    type == "travel"
+      ? "img/posts/travel.gif"
+      : type == "music"
+      ? "img/posts/music.gif"
+      : "img/posts/generic.jpg";
   return (
-    <div className={styles.post} onClick={()=>navigate(`/blog/${id}`)}>
-      <img className={styles.img} src={img} alt={type} />
-      <div className={styles.content}> 
-      <h2>{title}</h2>
-      <p className={styles.date}>{dateCreate.toDate().toLocaleString()}</p>
-      <p className={styles.summary}>{content}</p>
+    <div className={styles.post}>
+      <Image
+        className={styles.img}
+        src={img}
+        alt={type}
+        fallback="./img/placeholder.png"
+      />
+      <div className={styles.content} onClick={() => navigate(`/blog/${id}`)}>
+        <h2>{title}</h2>
+        <p className={styles.date}>{dateCreate.toDate().toLocaleString()}</p>
+        <p className={styles.summary}>{content}</p>
       </div>
     </div>
   );
