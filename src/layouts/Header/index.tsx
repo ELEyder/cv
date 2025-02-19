@@ -1,12 +1,17 @@
-import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../assets/logo.svg";
-import styles from "./index.module.css";
+import { Link, useLocation } from "react-router-dom";
 import ThemeSwitch from "../../components/ThemeSwitch";
-import { useLocation } from 'react-router-dom';
-function Header() {
+import styles from "./index.module.css";
+
+import { ReactComponent as Logo } from "../../assets/logo.svg";
+
+const Header = () => {
+
   const location = useLocation();
+  
   const isHomePage = location.pathname === "/";
+  
   const classnameLink = isHomePage ? styles.link : styles.link2
+  
   return (
     <header className={styles.header}>
       <Logo className={styles.logo}/>
@@ -21,6 +26,7 @@ function Header() {
       </nav>
     </header>
   );
+
 }
 
 export default Header;

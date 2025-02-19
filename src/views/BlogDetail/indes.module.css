@@ -8,6 +8,9 @@
   height: 600px;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-position:  center;
+  background-REPEAT: no-repeat;
 }
 
 .blog {

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface MenuItem {
+export default interface IMenuItem {
   href: string;
   icon: ReactNode;
   label: string;

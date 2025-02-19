@@ -1,12 +1,8 @@
 import styles from "./index.module.css";
-import { MenuItem } from "../../types/MenuItem";
 import { Link } from "react-scroll";
+import IMenuProps from "../../types/props/IMenuProps";
 
-interface MenuProps {
-  items: MenuItem[];
-}
-
-const Menu: React.FC<MenuProps> = ({ items }) => {
+const Menu: React.FC<IMenuProps> = ({ items }) => {
   return (
     <nav className={styles.menu}>
       {items.map((item, index) => (

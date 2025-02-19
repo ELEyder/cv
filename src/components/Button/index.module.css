@@ -1,4 +1,4 @@
-a.button {
+.button {
   width: fit-content;
   position: relative;
   padding: 15px 30px;
@@ -8,12 +8,13 @@ a.button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-a.button:hover {
+
+.button:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-a.button:active {
+.button:active {
   transform: translateY(0);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
@@ -31,7 +32,8 @@ a.button::before
   
 }
 */
-a.button span:nth-child(1) {
+
+.button span:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,6 +43,7 @@ a.button span:nth-child(1) {
   animation: animate1 2s linear infinite;
   animation-delay: 1s;
 }
+
 @keyframes animate1 {
   0% {
     transform: translateX(-100%);
@@ -49,7 +52,8 @@ a.button span:nth-child(1) {
     transform: translateX(100%);
   }
 }
-a.button span:nth-child(2) {
+
+.button span:nth-child(2) {
   position: absolute;
   top: 0;
   right: 0;
@@ -59,6 +63,7 @@ a.button span:nth-child(2) {
   animation: animate2 2s linear infinite;
   animation-delay: 2s;
 }
+
 @keyframes animate2 {
   0% {
     transform: translateY(-100%);
@@ -67,7 +72,8 @@ a.button span:nth-child(2) {
     transform: translateY(100%);
   }
 }
-a.button span:nth-child(3) {
+
+.button span:nth-child(3) {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -77,6 +83,7 @@ a.button span:nth-child(3) {
   animation: animate3 2s linear infinite;
   animation-delay: 1s;
 }
+
 @keyframes animate3 {
   0% {
     transform: translateX(100%);
@@ -85,7 +92,8 @@ a.button span:nth-child(3) {
     transform: translateX(-100%);
   }
 }
-a.button span:nth-child(4) {
+
+.button span:nth-child(4) {
   position: absolute;
   top: 0;
   left: 0;
@@ -95,6 +103,7 @@ a.button span:nth-child(4) {
   animation: animate4 2s linear infinite;
   animation-delay: 2s;
 }
+
 @keyframes animate4 {
   0% {
     transform: translateY(100%);

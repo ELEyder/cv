@@ -1,15 +1,8 @@
+import styles from "./index.module.css";
 
-function Loading() {
+const Loading = () => {
   return (
-    <div
-      style={{
-        width: "100wh",
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <div className={styles.container}>
       <img src="./logo.svg" />
     </div>
   );

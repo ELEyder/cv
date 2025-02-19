@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className={styles.footer}>
       <img className={styles.img} src="./img/bg/bg2.gif" alt="" />

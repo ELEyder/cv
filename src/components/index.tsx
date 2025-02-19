@@ -1,4 +1,4 @@
-export { default as Blog} from "./Blog";
+export { default as BlogCard} from "./BlogCard";
 export { default as Button} from "./Button";
 export { default as Loading} from "./Loading";
 export { default as Menu} from "./Menu";

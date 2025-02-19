@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import Menu from "../../components/Menu";
 import styles from "./index.module.css";
-import { MenuItem } from "../../types/MenuItem";
+import { MenuItem } from "../../types/core/IMenuItem";
 import { ReactComponent as HomeSvg } from "../../assets/svg/home.svg";
 import { ReactComponent as FolderSvg } from "../../assets/svg/folder.svg";
 import { ReactComponent as SkillsSvg } from "../../assets/svg/hammer.svg";

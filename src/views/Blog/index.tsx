@@ -1,41 +1,24 @@
 import styles from "./index.module.css";
-import { db } from "../../services/firestore/app";
-import { collection, getDocs } from "firebase/firestore";
-import { useEffect, useState } from "react";
-import Post from "../../components/Blog";
-import type { IBlog } from "../../types/IBlog";
-// Definir la interfaz para un blog
+import { BlogCard, Loading } from "../../components";
+import useBlog from "../../hooks/useBlog";
 
-function Blog() {
-  const [blogs, setBlogs] = useState<IBlog[]>([]);
+const Blog = () => {
+  const { blogs, loading, error } = useBlog();
 
-  const fetchData = async () => {
-    try {
-      const querySnapshot = await getDocs(collection(db, "blogs"));
-      setBlogs(
-        querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() } as IBlog))
-      );
-    } catch (error) {
-      console.error("Error fetching blogs: ", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  if (loading) return <Loading />;
+  if (error) return <p>{error}</p>;
 
   return (
     <>
       <section className={styles.blogs}>
         <div className={styles.head}>
-        <h1>One Blog</h1>
-        <p>Un vistazo personal al fascinante mundo de la tecnología.</p>
-
+          <h1>One Blog</h1>
+          <p>Un vistazo personal al fascinante mundo de la tecnología.</p>
         </div>
         <div className={styles.content}>
           {blogs.map((blog) => {
             return (
-              <Post
+              <BlogCard
                 key={blog.id}
                 id={blog.id}
                 title={blog.title}
@@ -49,6 +32,6 @@ function Blog() {
       </section>
     </>
   );
-}
+};
 
 export default Blog;

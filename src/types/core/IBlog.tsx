@@ -1,9 +1,9 @@
 import { Timestamp } from "firebase/firestore";
 
-export interface IBlog {
+export default interface IBlog {
   id: string;
   title: string;
   content: string;
-  dateCreate: Timestamp;
+  dateCreate?: Timestamp;
   type: "generic" | "travel" | "music";
 }

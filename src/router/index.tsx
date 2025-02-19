@@ -1,13 +1,13 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "../layouts/Layout";
 import Home from "../views/Home";
 import Error from "../views/Error";
 import Blog from "../views/Blog";
 import BlogDetail from "../views/BlogDetail";
 
-function Routing() {
+const Routing = () => {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ function Routing() {
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 

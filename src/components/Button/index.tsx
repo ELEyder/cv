@@ -1,11 +1,7 @@
-import { ReactNode } from "react";
 import styles from "./index.module.css"
-interface ButtonProps {
-  children: ReactNode;
-  onClick?: () => void;
-}
+import IButtonProps from "../../types/props/IButtonProps"
 
-function Button({ children, onClick = undefined }: ButtonProps) {
+const Button = ({ children, onClick }: IButtonProps) => {
   return <a onClick={onClick} className={styles.button}>
   <span></span>
    <span></span>

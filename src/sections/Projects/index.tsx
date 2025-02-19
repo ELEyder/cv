@@ -10,7 +10,7 @@ import { ReactComponent as PHP } from '../../assets/tech/php.svg';
 import { ReactComponent as GitHub } from '../../assets/contact/github.svg';
 import { ReactComponent as Internet } from '../../assets/contact/internet.svg';
 
-function Projects() {
+const Projects = () => {
   const projects = [
     {
       img: "p1",

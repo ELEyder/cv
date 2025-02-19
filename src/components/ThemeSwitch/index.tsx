@@ -1,23 +1,28 @@
 import { useState, useEffect } from "react";
 
-function ThemeSwitch() {
+const ThemeSwitch = () => {
+  
   const [isDarkMode, setTheme] = useState(false);
+
+  const setProperty = (key : string, value : string) => {
+    document.documentElement.style.setProperty(key, value);
+  }
 
   useEffect(() => {
     if (isDarkMode) {
-      document.documentElement.style.setProperty("--body-color", "#121212");
-      document.documentElement.style.setProperty("--link-color", "white");
-      document.documentElement.style.setProperty("--text-color", "white");
-      document.documentElement.style.setProperty("--svg-color", "white");
-      document.documentElement.style.setProperty("--shadown", "#000000b3");
+      setProperty("--body-color", "#121212");
+      setProperty("--link-color", "white");
+      setProperty("--text-color", "white");
+      setProperty("--svg-color", "white");
+      setProperty("--shadown", "#000000b3");
     } else {
-      document.documentElement.style.setProperty("--body-color", "#FAFAFA");
-      document.documentElement.style.setProperty("--link-color", "#5f6368");
-      document.documentElement.style.setProperty("--text-color", "black");
-      document.documentElement.style.setProperty("--svg-color", "#5f6368");
-      document.documentElement.style.setProperty("--shadown", "#ffffffcc");
+      setProperty("--body-color", "#FAFAFA");
+      setProperty("--link-color", "#5f6368");
+      setProperty("--text-color", "black");
+      setProperty("--svg-color", "#5f6368");
+      setProperty("--shadown", "#ffffffcc");
     }
-  }, [isDarkMode]); // Solo se ejecuta cuando cambia isDarkMode
+  }, [isDarkMode]);
 
   const toggleTheme = () => {
     setTheme((prev) => !prev); // Cambia el tema

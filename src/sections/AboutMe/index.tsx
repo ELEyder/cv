@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import Button from "../../components/Button";
 
-function AboutMe() {
+const AboutMe = () => {
   return (
         <section className={styles.aboutMe} id="aboutMe">
           <div className={styles.text}>

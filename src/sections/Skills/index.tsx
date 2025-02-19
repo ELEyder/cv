@@ -15,7 +15,7 @@ import { ReactComponent as Xampp } from "../../assets/tech/xampp.svg";
 import { ReactComponent as Git } from "../../assets/tech/git.svg";
 import { ReactComponent as Postman } from "../../assets/tech/postman.svg";
 
-function Skills() {
+const Skills = () => {
   const SKILLS = [
     {
       name: "React",
