@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
-import styles from "./Header.module.css";
+import styles from "./index.module.css";
 import ThemeSwitch from "../../components/ThemeSwitch";
 import { useLocation } from 'react-router-dom';
 function Header() {

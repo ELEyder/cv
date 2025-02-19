@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Contacts.module.css";
+import styles from "./index.module.css";
 import { ReactComponent as GitHub } from '../../assets/contact/github.svg';
 import { ReactComponent as LinkedIn } from '../../assets/contact/linkedin.svg';
 import { ReactComponent as Correo } from '../../assets/contact/email.svg';

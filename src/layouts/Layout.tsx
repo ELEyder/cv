@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
-import Contacts from "./Contacts/Contacts";
+import Header from "./Header";
+import Footer from "./Footer";
+import Contacts from "./Contacts";
 
 function Layout() {
   return (
