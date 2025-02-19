@@ -1,4 +1,4 @@
-import styles from "./Post.module.css";
+import styles from "./Blog.module.css";
 import { useNavigate } from "react-router-dom";
 import type { IBlog } from "../../types/IBlog";
 import { Image } from "antd";

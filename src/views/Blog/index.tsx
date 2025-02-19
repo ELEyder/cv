@@ -1,8 +1,8 @@
 import styles from "./indes.module.css";
-import { db } from "../../firestore/app";
+import { db } from "../../services/firestore/app";
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import Post from "../../components/Post/Post";
+import Post from "../../components/Blog/Blog";
 import type { IBlog } from "../../types/IBlog";
 // Definir la interfaz para un blog
 

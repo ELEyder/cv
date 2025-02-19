@@ -1,5 +1,5 @@
 import styles from "./indes.module.css";
-import { db } from "../../firestore/app";
+import { db } from "../../services/firestore/app";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";

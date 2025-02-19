@@ -9,7 +9,7 @@ import { ReactComponent as CaseSvg } from "../../assets/svg/case.svg";
 import { ReactComponent as ContactsSvg } from "../../assets/svg/contacts.svg";
 
 // Carga diferida de los componentes
-const AboutMe = lazy(() => import("../AboutMe"));
+const AboutMe = lazy(() => import("../AboutMe/AboutMe"));
 const Projects = lazy(() => import("../Projects"));
 const Skills = lazy(() => import("../Skills"));
 const Exp = lazy(() => import("../Exp"));

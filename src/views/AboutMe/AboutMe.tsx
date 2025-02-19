@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./AboutMe.module.css";
 import Button from "../../components/Button/Button";
 
 function AboutMe() {
