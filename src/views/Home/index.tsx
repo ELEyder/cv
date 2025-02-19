@@ -1,5 +1,5 @@
-import { lazy, Suspense } from "react";
-import Menu from "../../components/Menu/Menu";
+import { Suspense } from "react";
+import Menu from "../../components/Menu";
 import styles from "./index.module.css";
 import { MenuItem } from "../../types/MenuItem";
 import { ReactComponent as HomeSvg } from "../../assets/svg/home.svg";
@@ -8,12 +8,7 @@ import { ReactComponent as SkillsSvg } from "../../assets/svg/hammer.svg";
 import { ReactComponent as CaseSvg } from "../../assets/svg/case.svg";
 import { ReactComponent as ContactsSvg } from "../../assets/svg/contacts.svg";
 
-// Carga diferida de los componentes
-const AboutMe = lazy(() => import("../AboutMe/AboutMe"));
-const Projects = lazy(() => import("../Projects"));
-const Skills = lazy(() => import("../Skills"));
-const Exp = lazy(() => import("../Exp"));
-const Contacts = lazy(() => import("../Contacts"));
+import { AboutMe, Exp, Projects, Skills } from "../../sections";
 
 function Home() {
   const menuItems: MenuItem[] = [
@@ -41,7 +36,6 @@ function Home() {
           <Projects />
           <Skills />
           <Exp />
-          <Contacts />
         </Suspense>
       </div>
     </main>

@@ -1,12 +1,14 @@
 import { Outlet } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Contacts from "./Contacts/Contacts";
 
 function Layout() {
   return (
     <>
       <Header/>
       <Outlet />
+      <Contacts />
       <Footer />
     </>
   );

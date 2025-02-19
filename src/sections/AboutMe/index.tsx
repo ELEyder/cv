@@ -1,5 +1,5 @@
-import styles from "./AboutMe.module.css";
-import Button from "../../components/Button/Button";
+import styles from "./index.module.css";
+import Button from "../../components/Button";
 
 function AboutMe() {
   return (

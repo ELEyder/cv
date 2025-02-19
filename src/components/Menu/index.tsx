@@ -1,4 +1,4 @@
-import styles from "./Menu.module.css";
+import styles from "./index.module.css";
 import { MenuItem } from "../../types/MenuItem";
 import { Link } from "react-scroll";
 

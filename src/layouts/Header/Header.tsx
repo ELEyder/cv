@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import styles from "./Header.module.css";
-import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
+import ThemeSwitch from "../../components/ThemeSwitch";
 import { useLocation } from 'react-router-dom';
 function Header() {
   const location = useLocation();
