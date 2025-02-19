@@ -26,7 +26,7 @@ const Blog = ({ id, title, dateCreate, content, type }: IBlog) => {
 
       <div className={styles.content} onClick={() => navigate(`/blog/${id}`)}>
         <h2>{title}</h2>
-        <p>{dateCreate.toDate().toLocaleString()}</p>
+        <p>{dateCreate?.toDate().toLocaleString()}</p>
         <p>{content}</p>
       </div>
 
