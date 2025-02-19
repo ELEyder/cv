@@ -11,7 +11,9 @@ const useBlogDetail = ( id? : string) => {
     content: "",
     type: "generic",
   });
+
   const [loading, setLoading] = useState(true);
+
   const [error, setError] = useState<string | null>(null);
 
   const fetchBlog = async () => {
@@ -43,7 +45,6 @@ const useBlogDetail = ( id? : string) => {
       }
     } catch (error) {
 
-      console.error("Error fetching blogs: ", error);
       setError("Error al obtener el blog");
 
     } finally {
@@ -60,6 +61,7 @@ const useBlogDetail = ( id? : string) => {
   }, []);
 
   return { blog, loading, error };
+
 };
 
 export default useBlogDetail;

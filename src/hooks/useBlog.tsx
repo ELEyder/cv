@@ -21,8 +21,6 @@ const useBlog = () => {
 
     } catch (error) {
 
-      console.error("Error fetching blogs: ", error);
-
       setError("Error al obtener los blogs");
 
     } finally {
