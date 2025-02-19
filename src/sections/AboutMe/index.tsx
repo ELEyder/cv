@@ -14,7 +14,7 @@ const AboutMe = () => {
             </div>
           </div>
           <div className={styles.media}>
-            <img className={styles.banner} src={"./img/bg/bg1.gif"} alt="bg1" />
+            <img className={styles.banner} src={"./images/bg/bg1.gif"} alt="bg1" />
           </div>
         </section>
   );

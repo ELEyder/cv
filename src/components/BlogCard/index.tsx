@@ -9,10 +9,10 @@ const Blog = ({ id, title, dateCreate, content, type }: IBlog) => {
 
   const img =
     type == "travel"
-      ? "img/posts/travel.gif"
+      ? "images/posts/travel.gif"
       : type == "music"
-      ? "img/posts/music.gif"
-      : "img/posts/generic.jpg";
+      ? "images/posts/music.gif"
+      : "images/posts/generic.jpg";
 
   return (
     <div className={styles.post}>
@@ -21,7 +21,7 @@ const Blog = ({ id, title, dateCreate, content, type }: IBlog) => {
         className={styles.img}
         src={img}
         alt={type}
-        fallback="./img/placeholder.png"
+        fallback="./images/placeholder.png"
       />
 
       <div className={styles.content} onClick={() => navigate(`/blog/${id}`)}>

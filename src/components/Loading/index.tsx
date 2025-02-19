@@ -1,9 +1,10 @@
 import styles from "./index.module.css";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 const Loading = () => {
   return (
     <div className={styles.container}>
-      <img src="./logo.svg" />
+      <Logo className={styles.logo} />
     </div>
   );
 }

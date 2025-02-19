@@ -5,3 +5,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.logo{
+  width: 100px;
+}
+
+.logo path{
+  fill: var(--text-color);
+}

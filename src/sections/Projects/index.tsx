@@ -135,9 +135,9 @@ const Projects = () => {
               <div key={index} className={styles.card} >
                 <Image
                   className={styles.imgProject}
-                  src={`./img/projects/${project.img}.png`}
+                  src={`./images/projects/${project.img}.png`}
                   alt={project.name}
-                  fallback="./img/placeholder.png"
+                  fallback="./images/placeholder.png"
                   width="100%"
                 />
                 <div className={styles.text}>
