@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 
-/src/firestore/app.tsx
+/src/services/firestore/app.tsx
