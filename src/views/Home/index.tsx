@@ -11,7 +11,7 @@ import { ReactComponent as ContactsSvg } from "../../assets/svg/contacts.svg";
 import { AboutMe, Exp, Projects, Skills } from "../../sections";
 import { Loading } from "../../components";
 
-function Home() {
+const Home = () => {
   const menuItems: IMenuItem[] = [
     { href: "aboutMe", icon: <HomeSvg className={styles.svg}/>, label: "Sobre mí" },
     { href: "projects", icon: <FolderSvg className={styles.svg}/>, label: "Proyectos" },
