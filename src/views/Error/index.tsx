@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 function Error() {
   return (
     <section className={styles.container}>
-      <img src="images/bg/bg4.gif" />
+      <img src="images/bg/bg4.webp" />
       <h1>Error 404</h1>
       <Link to={"/"}>Ir al inicio</Link>
     </section>

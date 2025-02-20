@@ -10,10 +10,10 @@ const BlogDetail = () => {
 
   const img =
     blog.type == "travel"
-      ? "images/posts/travel.gif"
+      ? "images/posts/travel.webp"
       : blog.type == "music"
-      ? "images/posts/music.gif"
-      : "images/posts/generic.jpg";
+      ? "images/posts/music.webp"
+      : "images/posts/generic.webp";
 
   if (loading) return <Loading />;
 
