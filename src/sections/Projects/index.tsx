@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import { Image, Tooltip } from "antd";
 import { ReactComponent as React } from '../../assets/tech/react.svg';
+import { ReactComponent as TypeScript } from '../../assets/tech/ts.svg';
 import { ReactComponent as Spring } from '../../assets/tech/spring.svg';
 import { ReactComponent as Node } from '../../assets/tech/node.svg';
 import { ReactComponent as MySQL } from '../../assets/tech/mysql.svg';
@@ -24,6 +25,14 @@ const Projects = () => {
           name: "React",
           icon: <React className={styles.svg}/>
         },
+        {
+          name: "TypeScript",
+          icon: <TypeScript className={styles.svg}/>
+        },
+        {
+          name: "Firebase",
+          icon: <Firebase className={styles.svg}/>
+        }
       ],
     },
     {

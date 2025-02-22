@@ -11,9 +11,7 @@ import { ReactComponent as Figma } from "../../assets/tech/figma.svg";
 import { ReactComponent as TS } from "../../assets/tech/ts.svg";
 import { ReactComponent as Tailwind } from "../../assets/tech/tailwind.svg";
 import { ReactComponent as Next } from "../../assets/tech/next.svg";
-import { ReactComponent as Xampp } from "../../assets/tech/xampp.svg";
 import { ReactComponent as Git } from "../../assets/tech/git.svg";
-import { ReactComponent as Postman } from "../../assets/tech/postman.svg";
 
 const Skills = () => {
   const SKILLS = [
@@ -62,17 +60,9 @@ const Skills = () => {
       icon: <Next className={styles.next}/>,
     },
     {
-      name: "Xampp",
-      icon: <Xampp className={styles.xampp}/>,
-    },
-    {
       name: "Git",
       icon: <Git className={styles.git}/>,
-    },
-    {
-      name: "Postman",
-      icon: <Postman className={styles.postman}/>,
-    },
+    }
   ];
   return (
     <>
