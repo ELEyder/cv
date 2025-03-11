@@ -4,30 +4,24 @@ import styles from "./index.module.css";
 const EXPERIENCES = [
   {
     company: "Corporación Kaliffo S.A.C",
-    role: "Desarrollador Frontend",
+    role: "Desarrollador Full-Stack",
     duration: "Agosto 2024 - Diciembre 2024",
-    description:
-      "Desde mi rol se aportó en todo el UI/UX del ERP que administra los módulos de trabajadores, tiendas, productos y ventas, entre otros.",
+    description: `Desarrollé un sistema ERP para una MYPE
+      utilizando React (frontend) y Node.js
+      (backend), aumentando la eficiencia operativa
+      en un 30%.`,
     tech: ["React", "Ant Design", "Node.js (Typescript)", "APIs", "MySQL"],
   },
   {
     company: "CM Educativa",
     role: "Desarrollador Móvil",
     duration: "Marzo 2024 - Junio 2024",
-    description:
-      "Se realizó un aplicativo móvil que administre las llamadas del usuario, enviando la información a una base de datos y registrar la eficiencia de cada usuario.",
+    description: `Desarrollé un aplicativo móvil para la gestión
+      de llamadas de usuario, mejorando el
+      seguimiento del rendimiento en un 40%`,
     tech: ["FlutterFlow", "APIs"],
   },
-  {
-    company: "Consigue Ventas",
-    role: "Diseñador UI/UX",
-    duration: "Agosto 2023 - Diciembre 2023",
-    description:
-      "Realizaba prototipos de páginas web para enfocar el UI/UX en el usuario y poder facilitar el desarrollo frontend con WordPress.",
-    tech: ["Figma"],
-  },
 ];
-
 
 const Experience: React.FC = () => {
   return (

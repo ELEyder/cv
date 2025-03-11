@@ -82,7 +82,10 @@
 @media (max-width: 495px) {
   .nav {
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+  .header {
+    padding: 20px 0px;
   }
   .logo, .logo2 {
     display: none;

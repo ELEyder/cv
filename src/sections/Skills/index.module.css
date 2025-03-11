@@ -39,6 +39,10 @@
   fill: #68a063; /* Verde de Node.js */
 }
 
+.java path {
+  fill: #f21e1e; /* Verde de Node.js */
+}
+
 .django path {
   fill: #0e4933; /* Verde oscuro de Django */
 }

@@ -19,6 +19,9 @@
     flex-direction: column;
     align-items: start;
     gap: 10px;
+    h2 {
+      color : var(--svg-color)
+    }
   }
 }
 
@@ -66,4 +69,12 @@
     }
   }
   
+}
+
+@media (max-width: 1001px) {
+  .text {
+    p {
+      display: none;
+    }
+  }
 }

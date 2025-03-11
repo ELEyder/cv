@@ -6,12 +6,14 @@ const AboutMe = () => {
     <section className={styles.aboutMe} id="aboutMe">
       <div className={styles.text}>
         <div className={styles.content}>
-          <h1>Hola, Soy Eyder - Desarrollador Web</h1>
+          <h1>Soy Eyder Huayta</h1>
+          <h2>Desarrollador Web</h2>
           <p>
-            Desarrollador de Software con 2 años de experiencia en desarrollo
-            web. Sólidos conocimientos en diseño, implementación y mantenimiento           de soluciones de software, con habilidades en Php, Java y
-            JavaScript, y experiencia en tecnologías como Laravel, Spring Boot y
-            React
+            Desarrollador de Software con <strong>2 años de experiencia</strong> en el desarrollo
+            web. Sólidos conocimientos en diseño, implementación y mantenimiento
+            de soluciones de software, con habilidades en <strong>PHP, Java y
+            JavaScript</strong>, y experiencia en tecnologías como <strong>Laravel, Spring Boot y
+            React</strong>
           </p>
           <Button
             onClick={() => {

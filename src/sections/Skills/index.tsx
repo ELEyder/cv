@@ -5,13 +5,12 @@ import { ReactComponent as Spring } from "../../assets/tech/spring.svg";
 import { ReactComponent as Node } from "../../assets/tech/node.svg";
 import { ReactComponent as MySQL } from "../../assets/tech/mysql.svg";
 import { ReactComponent as Firebase } from "../../assets/tech/firebase.svg";
-import { ReactComponent as DJango } from "../../assets/tech/django.svg";
 import { ReactComponent as PHP } from "../../assets/tech/php.svg";
 import { ReactComponent as Figma } from "../../assets/tech/figma.svg";
 import { ReactComponent as TS } from "../../assets/tech/ts.svg";
 import { ReactComponent as Tailwind } from "../../assets/tech/tailwind.svg";
-import { ReactComponent as Next } from "../../assets/tech/next.svg";
 import { ReactComponent as Git } from "../../assets/tech/git.svg";
+import { ReactComponent as Java } from "../../assets/tech/java.svg";
 
 const Skills = () => {
   const SKILLS = [
@@ -28,8 +27,8 @@ const Skills = () => {
       icon: <Node className={styles.node}/>,
     },
     {
-      name: "Django",
-      icon: <DJango className={styles.django}/>,
+      name: "Java",
+      icon: <Java className={styles.java}/>,
     },
     {
       name: "Spring",
@@ -48,21 +47,17 @@ const Skills = () => {
       icon: <Firebase className={styles.firebase}/>,
     },
     {
-      name: "Figma",
-      icon: <Figma className={styles.figma}/>,
-    },
-    {
       name: "Tailwind",
       icon: <Tailwind className={styles.tailwind}/>,
     },
     {
-      name: "Next Js",
-      icon: <Next className={styles.next}/>,
-    },
-    {
       name: "Git",
       icon: <Git className={styles.git}/>,
-    }
+    },
+    {
+      name: "Figma",
+      icon: <Figma className={styles.figma}/>,
+    },
   ];
   return (
     <>
