@@ -1,0 +1,1 @@
+import{j as r,b as s}from"./index-p3RNfYB3.js";const n="_container_y5kwv_1",e={container:n},o=()=>r.jsxs("section",{className:e.container,children:[r.jsx("img",{src:"images/bg/bg4.webp"}),r.jsx("h1",{children:"Error 404"}),r.jsx(s,{to:"/",children:"Ir al inicio"})]});export{o as default};
