@@ -9,9 +9,9 @@ const AboutMe = () => {
           <h1>Soy Eyder Huayta</h1>
           <h2>Desarrollador Web</h2>
           <p>
-            Desarrollador de Software con <strong>1 año de experiencia</strong> en el desarrollo
+            Desarrollador de Software con <strong>2 año de experiencia</strong> en el desarrollo
             web. Sólidos conocimientos en diseño, implementación y mantenimiento
-            de soluciones de software, con habilidades en <strong>PHP, Java y
+            de soluciones de software, con habilidades en <strong>PHP, Java, Typescript y 
             JavaScript</strong>, y experiencia en tecnologías como <strong>Laravel, Spring Boot y
             React</strong>
           </p>
